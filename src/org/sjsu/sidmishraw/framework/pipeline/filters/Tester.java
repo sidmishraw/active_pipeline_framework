@@ -11,7 +11,7 @@ package org.sjsu.sidmishraw.framework.pipeline.filters;
 import org.sjsu.sidmishraw.framework.pipeline.core.Filter;
 import org.sjsu.sidmishraw.framework.pipeline.core.Message;
 import org.sjsu.sidmishraw.framework.pipeline.core.Pipe;
-import org.sjsu.sidmishraw.framework.pipeline.errors.DisconnectedTransformerError;
+import org.sjsu.sidmishraw.framework.pipeline.errors.DisconnectedTesterError;
 
 /**
  * @author sidmishraw
@@ -47,8 +47,8 @@ public abstract class Tester<T> extends Filter<T> {
 			
 			try {
 				
-				throw new DisconnectedTransformerError("The Tester is not connected to pipes on both the ends");
-			} catch (DisconnectedTransformerError e) {
+				throw new DisconnectedTesterError("The Tester is not connected to pipes on both the ends");
+			} catch (DisconnectedTesterError e) {
 				
 				return false;
 			}
