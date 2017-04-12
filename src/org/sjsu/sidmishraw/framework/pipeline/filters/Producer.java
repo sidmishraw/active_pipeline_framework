@@ -70,6 +70,8 @@ public abstract class Producer<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
+		System.out.println("Started Producer");
+		
 		// flag that denotes that the Producer should shutdown
 		boolean shutdown = false;
 		
@@ -91,9 +93,10 @@ public abstract class Producer<T> extends Filter<T> {
 				// message for quitting
 				message = new Message<>(messageContent, true, false);
 				shutdown = true;
+			} else {
+				
+				message = new Message<>(messageContent, false, false);
 			}
-			
-			message = new Message<>(messageContent, false, false);
 			
 			if (null != message) {
 				
@@ -109,6 +112,9 @@ public abstract class Producer<T> extends Filter<T> {
 				this.outPipe.write(message);
 			}
 		}
+		
+		System.out.println("Shutting down Producer");
+		Thread.yield();
 	}
 	
 	/**
@@ -122,7 +128,10 @@ public abstract class Producer<T> extends Filter<T> {
 	public abstract T produce();
 	
 	/**
-	 * Marks the Producer to send out the quit message and shutdown
+	 * Makes the Producer to send out the quit message and shutdown
+	 * To be called from within the produce() ideally or can be called from
+	 * outside logic to explicitly
+	 * shutdown the Producer
 	 * 
 	 * @param status
 	 */

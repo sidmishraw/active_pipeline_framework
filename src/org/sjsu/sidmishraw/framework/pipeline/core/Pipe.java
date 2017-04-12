@@ -20,7 +20,13 @@ import java.util.Queue;
 public class Pipe<T> {
 	
 	
-	private Queue<Message<T>> messageQueue = null;
+	private Queue<Message<T>>	messageQueue	= null;
+	
+	// after receiving the final `quit:true` message and adding it to the
+	// messageQueue
+	// the pipes should never block anymore in case they go empty
+	// since the system is shutting down
+	private boolean				allowBlocking	= true;
 	
 	/**
 	 * 
@@ -71,6 +77,11 @@ public class Pipe<T> {
 			
 			try {
 				
+				if (!allowBlocking) {
+					
+					break;
+				}
+				
 				this.wait();
 			} catch (InterruptedException e) {
 				
@@ -92,6 +103,13 @@ public class Pipe<T> {
 	public synchronized void write(Message<T> message) {
 		
 		this.getMessageQueue().add(message);
+		
+		if (message.isQuit()) {
+			
+			this.allowBlocking = false;
+			
+			// System.out.println("NonBlocking");
+		}
 		
 		this.notifyAll();
 	}

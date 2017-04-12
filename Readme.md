@@ -62,10 +62,10 @@ After completing the framework, use the framework to implement:
 * GarBage Band:
 GarBage Band is a digital music studio that processes streams of musical notes. Each note has frequency, amplitude, and duration. (These can be floating point numbers.) GB provides the following configurable filters:
 
-·       Amplifiers: Increases or decreases the volume of each note
-·       Players: Play the notes through the computer's sound system.
-·       Noise Filters: Remove noise notes from the stream. A noise note can be a note that doesn't make sense: too loud, too quiet, too short, inaudible frequency, or a note that's suspiciously different from its predecessor (this might be static or a pop).
-·       Digital Composer: Generates a random sequence of <= 100 notes.
+** Amplifiers: Increases or decreases the volume of each note
+** Players: Play the notes through the computer's sound system.
+** Noise Filters: Remove noise notes from the stream. A noise note can be a note that doesn't make sense: too loud, too quiet, too short, inaudible frequency, or a note that's suspiciously different from its predecessor (this might be static or a pop).
+** Digital Composer: Generates a random sequence of <= 100 notes.
 
 
 * [Airline Performance Analyzer:](http://www.cs.sjsu.edu/faculty/pearce/modules/projects/streams/index.htm)

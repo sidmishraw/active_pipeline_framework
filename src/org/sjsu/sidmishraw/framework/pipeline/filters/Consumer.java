@@ -65,6 +65,8 @@ public abstract class Consumer<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
+		System.out.println("Started Consumer");
+		
 		boolean shutdown = false;
 		
 		// TODO Auto-generated method stub
@@ -101,16 +103,22 @@ public abstract class Consumer<T> extends Filter<T> {
 			// this.inPipe.notifyAll();
 			// }
 			
-			if (!readMessage.isFail()) {
+			if (null != readMessage && !readMessage.isFail()) {
 				
 				this.consume(readMessage.getContent());
 			}
 			
-			if (readMessage.isQuit()) {
+			if (null == readMessage || readMessage.isQuit()) {
 				
+				// System.out.println(null != readMessage ? "Quit" : "Null");
 				shutdown = true;
 			}
+			
 		}
+		
+		System.out.println("Shutting down Consumer");
+		
+		Thread.yield();
 	}
 	
 	/**

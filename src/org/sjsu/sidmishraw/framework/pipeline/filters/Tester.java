@@ -65,6 +65,8 @@ public abstract class Tester<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
+		System.out.println("Started Tester");
+		
 		// TODO Auto-generated method stub
 		// tests the messages from the input pipe
 		// writes the result into the outPipe if the result is `true`
@@ -106,17 +108,19 @@ public abstract class Tester<T> extends Filter<T> {
 			// this.inPipe.notifyAll();
 			// }
 			
-			if (!readMessage.isFail()) {
+			if (null != readMessage && !readMessage.isFail()) {
 				
 				// don't modify the quit message
 				// never want to discard the quit message
-				if (!test(readMessage.getContent()) && !readMessage.isQuit()) {
+				if (!readMessage.isQuit() && !test(readMessage.getContent())) {
 					
 					readMessage.setFail(true);
 				}
 			}
 			
-			if (readMessage.isQuit()) {
+			if (null == readMessage || readMessage.isQuit()) {
+				
+				// System.out.println(null != readMessage ? "Quit" : "Null");
 				
 				shutdown = true;
 			}
@@ -130,9 +134,15 @@ public abstract class Tester<T> extends Filter<T> {
 			//
 			// this.outPipe.notifyAll();
 			// }
-			
-			this.outPipe.write(readMessage);
+			if (null != readMessage) {
+				
+				this.outPipe.write(readMessage);
+			}
 		}
+		
+		System.out.println("Shutting down Tester");
+		
+		Thread.yield();
 	}
 	
 	/**

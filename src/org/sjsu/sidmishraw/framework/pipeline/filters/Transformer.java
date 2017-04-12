@@ -66,6 +66,8 @@ public abstract class Transformer<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
+		System.out.println("Started Transformer");
+		
 		boolean shutdown = false;
 		
 		// TODO Auto-generated method stub
@@ -110,15 +112,16 @@ public abstract class Transformer<T> extends Filter<T> {
 			// this.inPipe.notifyAll();
 			// }
 			
-			if (!readMessage.isFail()) {
+			if (null != readMessage && !readMessage.isFail()) {
 				
 				T transformedMessageContent = transform(readMessage.getContent());
 				
 				readMessage.setContent(transformedMessageContent);
 			}
 			
-			if (readMessage.isQuit()) {
+			if (null == readMessage || readMessage.isQuit()) {
 				
+				// System.out.println(null != readMessage ? "Quit" : "Null");
 				shutdown = true;
 			}
 			
@@ -132,9 +135,15 @@ public abstract class Transformer<T> extends Filter<T> {
 			//
 			// this.outPipe.notifyAll();
 			// }
-			
-			this.outPipe.write(readMessage);
+			if (null != readMessage) {
+				
+				this.outPipe.write(readMessage);
+			}
 		}
+		
+		System.out.println("Shutting down Transformer");
+		
+		Thread.yield();
 	}
 	
 	/**
