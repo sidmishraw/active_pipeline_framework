@@ -45,8 +45,11 @@ public abstract class Transformer<T> extends Filter<T> {
 		
 		// TODO Auto-generated method stub
 		// keep transforming the messages from inPipe and write to outPipe till
-		// inPipe is empty. If it receives a message that already has a `fail:true` flag, passes
+		// inPipe is empty. If it receives a message that already has a
+		// `fail:true` flag, passes
 		// on the message without modification.
+		// Stop the thread after writing the message with `quit:flag` to the
+		// outPipe
 	}
 	
 	/**

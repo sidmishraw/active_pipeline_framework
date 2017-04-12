@@ -9,7 +9,6 @@
 package org.sjsu.sidmishraw.framework.pipeline.filters;
 
 import org.sjsu.sidmishraw.framework.pipeline.core.Filter;
-import org.sjsu.sidmishraw.framework.pipeline.core.Message;
 import org.sjsu.sidmishraw.framework.pipeline.core.Pipe;
 
 /**
@@ -45,8 +44,19 @@ public abstract class Consumer<T> extends Filter<T> {
 		
 		// TODO Auto-generated method stub
 		// keep consuming messages till inPipe is empty.
+		// do nothing to the messages that have a fail status.
+		// stop the thread after receiving the message with `quit:true` flag
 		
 	}
 	
-	public abstract void consume(Message<T> message);
+	/**
+	 * 
+	 * @param content
+	 *            T
+	 *            The content of the message that needs to be consumed
+	 */
+	// The user of the framework doesn't need to know about the Message wrapper
+	// used in the framework, since all they are concerned about is the contents
+	// of the Message
+	public abstract void consume(T content);
 }

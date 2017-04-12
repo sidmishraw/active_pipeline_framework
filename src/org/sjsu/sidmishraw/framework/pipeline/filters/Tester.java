@@ -48,6 +48,8 @@ public abstract class Tester<T> extends Filter<T> {
 		// else changes the `fail` flag of the message to true and then writes it to the 
 		// outPipe. If it receives a message that already has a `fail:true` flag, passes
 		// on the message without modification.
+		// Stop the thread after writing the message with `quit:flag` to the
+		// outPipe
 	}
 	
 	/**

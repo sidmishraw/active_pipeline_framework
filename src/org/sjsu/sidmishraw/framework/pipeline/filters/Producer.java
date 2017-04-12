@@ -9,7 +9,6 @@
 package org.sjsu.sidmishraw.framework.pipeline.filters;
 
 import org.sjsu.sidmishraw.framework.pipeline.core.Filter;
-import org.sjsu.sidmishraw.framework.pipeline.core.Message;
 import org.sjsu.sidmishraw.framework.pipeline.core.Pipe;
 
 /**
@@ -46,8 +45,16 @@ public abstract class Producer<T> extends Filter<T> {
 		
 		// TODO Auto-generated method stub
 		// keep producing messages and dumping them into the outPipe
-		
+		// stop the thread after sending out the `quit:true` flagged message
 	}
 	
-	public abstract Message<T> produce();
+	/**
+	 * 
+	 * @return messageContent T
+	 *         The message content produced by the
+	 */
+	// The user of the framework doesn't need to know about Message, since it is
+	// a wrapper
+	// used internally in the framework
+	public abstract T produce();
 }
