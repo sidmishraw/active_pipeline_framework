@@ -8,18 +8,25 @@
  */
 package org.sjsu.sidmishraw.framework.pipeline.core;
 
+import java.io.Serializable;
+
 /**
  * @author sidmishraw
  *
  *         Qualified Name: org.sjsu.sidmishraw.framework.pipeline.core.Message
  *
  */
-public class Message<T> {
+public class Message<T> implements Serializable {
 	
 	
-	private T		content	= null;
-	private boolean	quit	= false;
-	private boolean	fail	= false;
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
+	
+	private T					content				= null;
+	private boolean				quit				= false;
+	private boolean				fail				= false;
 	
 	/**
 	 * 
@@ -43,7 +50,6 @@ public class Message<T> {
 	 */
 	public T getContent() {
 		
-		
 		return this.content;
 	}
 	
@@ -53,7 +59,6 @@ public class Message<T> {
 	 */
 	public void setContent(T content) {
 		
-		
 		this.content = content;
 	}
 	
@@ -61,7 +66,6 @@ public class Message<T> {
 	 * @return the quit
 	 */
 	public boolean isQuit() {
-		
 		
 		return this.quit;
 	}
@@ -72,7 +76,6 @@ public class Message<T> {
 	 */
 	public void setQuit(boolean quit) {
 		
-		
 		this.quit = quit;
 	}
 	
@@ -80,7 +83,6 @@ public class Message<T> {
 	 * @return the fail
 	 */
 	public boolean isFail() {
-		
 		
 		return this.fail;
 	}
@@ -90,7 +92,6 @@ public class Message<T> {
 	 *            the fail to set
 	 */
 	public void setFail(boolean fail) {
-		
 		
 		this.fail = fail;
 	}

@@ -9,7 +9,9 @@
 package org.sjsu.sidmishraw.framework.pipeline.filters;
 
 import org.sjsu.sidmishraw.framework.pipeline.core.Filter;
+import org.sjsu.sidmishraw.framework.pipeline.core.Message;
 import org.sjsu.sidmishraw.framework.pipeline.core.Pipe;
+import org.sjsu.sidmishraw.framework.pipeline.errors.DisconnectedTransformerError;
 
 /**
  * @author sidmishraw
@@ -34,6 +36,27 @@ public abstract class Tester<T> extends Filter<T> {
 		super(inPipe, outPipe);
 	}
 	
+	/**
+	 * 
+	 * @return true if Transformer is connected to Pipes on both the ends else
+	 *         false
+	 */
+	private final boolean isConnectedPipes() {
+		
+		if (null == this.inPipe || null == this.outPipe) {
+			
+			try {
+				
+				throw new DisconnectedTransformerError("The Tester is not connected to pipes on both the ends");
+			} catch (DisconnectedTransformerError e) {
+				
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -45,11 +68,65 @@ public abstract class Tester<T> extends Filter<T> {
 		// TODO Auto-generated method stub
 		// tests the messages from the input pipe
 		// writes the result into the outPipe if the result is `true`
-		// else changes the `fail` flag of the message to true and then writes it to the 
-		// outPipe. If it receives a message that already has a `fail:true` flag, passes
+		// else changes the `fail` flag of the message to true and then writes
+		// it to the
+		// outPipe. If it receives a message that already has a `fail:true`
+		// flag, passes
 		// on the message without modification.
 		// Stop the thread after writing the message with `quit:flag` to the
 		// outPipe
+		boolean shutdown = false;
+		
+		while (true) {
+			
+			if (!isConnectedPipes() || shutdown) {
+				
+				break;
+			}
+			
+			Message<T> readMessage = null;
+			
+			synchronized (this.inPipe) {
+				
+				while (this.inPipe.getMessageQueue().size() == 0 || null == (readMessage = this.inPipe.read())) {
+					
+					try {
+						
+						this.inPipe.wait();
+					} catch (InterruptedException e) {
+						
+						e.printStackTrace();
+					}
+				}
+				
+				this.inPipe.notifyAll();
+			}
+			
+			if (!readMessage.isFail()) {
+				
+				// don't modify the quit message
+				// never want to discard the quit message
+				if (!test(readMessage.getContent()) && !readMessage.isQuit()) {
+					
+					readMessage.setFail(true);
+				}
+			}
+			
+			if (readMessage.isQuit()) {
+				
+				shutdown = true;
+			}
+			
+			// write to the outPipe after obtaining lock while preventing
+			// others to read
+			// from the outPipe
+			synchronized (this.outPipe) {
+				
+				this.outPipe.write(readMessage);
+				
+				this.outPipe.notifyAll();
+			}
+		}
 	}
 	
 	/**

@@ -8,6 +8,7 @@
  */
 package org.sjsu.sidmishraw.framework.pipeline.core;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -24,7 +25,13 @@ public class Pipe<T> {
 	/**
 	 * 
 	 */
-	public Pipe() {}
+	public Pipe() {
+		
+		if (null == this.messageQueue) {
+			
+			this.messageQueue = new LinkedList<>();
+		}
+	}
 	
 	/**
 	 * @param messageQueue
@@ -39,7 +46,6 @@ public class Pipe<T> {
 	 */
 	public Queue<Message<T>> getMessageQueue() {
 		
-		
 		return this.messageQueue;
 	}
 	
@@ -48,7 +54,6 @@ public class Pipe<T> {
 	 *            the messageQueue to set
 	 */
 	public void setMessageQueue(Queue<Message<T>> messageQueue) {
-		
 		
 		this.messageQueue = messageQueue;
 	}
@@ -60,8 +65,9 @@ public class Pipe<T> {
 	 */
 	public Message<T> read() {
 		
+		Message<T> message = this.getMessageQueue().poll();
 		
-		return null;
+		return message;
 	}
 	
 	/**
@@ -72,7 +78,6 @@ public class Pipe<T> {
 	 */
 	public void write(Message<T> message) {
 		
-		
-		return;
+		this.getMessageQueue().add(message);
 	}
 }
