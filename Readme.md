@@ -30,7 +30,7 @@ Filters can also be classified as *active* or *passive*.
 
 A passive filter has a control loop function. Here's a simplified version that assumes the filter is a transformer:
 
-	```
+
 	void controlLoop()
 	{
 	   while(true)
@@ -40,18 +40,16 @@ A passive filter has a control loop function. Here's a simplified version that a
 	      outPipe.write(val);
 	   }
 	}
-	```
+
 
 When activated, a passive filter reads a single message from its input pipe, processes it, then writes the result to its output pipe:
 
-	```
 	void activate()
 	{
 	   Message val = inPipe.read();
 	   val = transform(val); // do something to val
 	   outPipe.write(val);
 	}
-	```
 
 There are two types of passive filters. 
 
