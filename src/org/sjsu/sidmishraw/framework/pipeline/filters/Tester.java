@@ -84,23 +84,27 @@ public abstract class Tester<T> extends Filter<T> {
 				break;
 			}
 			
-			Message<T> readMessage = null;
+			// Message<T> readMessage = null;
 			
-			synchronized (this.inPipe) {
-				
-				while (this.inPipe.getMessageQueue().size() == 0 || null == (readMessage = this.inPipe.read())) {
-					
-					try {
-						
-						this.inPipe.wait();
-					} catch (InterruptedException e) {
-						
-						e.printStackTrace();
-					}
-				}
-				
-				this.inPipe.notifyAll();
-			}
+			// the Tester is blocked till there is data in the inPipe
+			Message<T> readMessage = this.inPipe.read();
+			
+			// synchronized (this.inPipe) {
+			//
+			// while (this.inPipe.getMessageQueue().size() == 0 || null ==
+			// (readMessage = this.inPipe.read())) {
+			//
+			// try {
+			//
+			// this.inPipe.wait();
+			// } catch (InterruptedException e) {
+			//
+			// e.printStackTrace();
+			// }
+			// }
+			//
+			// this.inPipe.notifyAll();
+			// }
 			
 			if (!readMessage.isFail()) {
 				
@@ -117,15 +121,17 @@ public abstract class Tester<T> extends Filter<T> {
 				shutdown = true;
 			}
 			
-			// write to the outPipe after obtaining lock while preventing
-			// others to read
-			// from the outPipe
-			synchronized (this.outPipe) {
-				
-				this.outPipe.write(readMessage);
-				
-				this.outPipe.notifyAll();
-			}
+			// // write to the outPipe after obtaining lock while preventing
+			// // others to read
+			// // from the outPipe
+			// synchronized (this.outPipe) {
+			//
+			// this.outPipe.write(readMessage);
+			//
+			// this.outPipe.notifyAll();
+			// }
+			
+			this.outPipe.write(readMessage);
 		}
 	}
 	

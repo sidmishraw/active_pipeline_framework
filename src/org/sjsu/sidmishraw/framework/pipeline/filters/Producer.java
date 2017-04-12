@@ -97,12 +97,16 @@ public abstract class Producer<T> extends Filter<T> {
 			
 			if (null != message) {
 				
-				synchronized (this.outPipe) {
-					
-					this.outPipe.write(message);
-					
-					this.outPipe.notifyAll();
-				}
+				// synchronized (this.outPipe) {
+				//
+				// this.outPipe.write(message);
+				//
+				// this.outPipe.notifyAll();
+				// }
+				
+				// the outPipe.write is a synchronized method with outPipe being
+				// the monitor
+				this.outPipe.write(message);
 			}
 		}
 	}

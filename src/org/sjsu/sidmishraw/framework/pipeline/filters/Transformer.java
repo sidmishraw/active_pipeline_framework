@@ -83,28 +83,32 @@ public abstract class Transformer<T> extends Filter<T> {
 				break;
 			}
 			
-			Message<T> readMessage = null;
+			// Message<T> readMessage = null;
 			
-			synchronized (this.inPipe) {
-				
-				// block and wait on the inPipe till it is filled with new
-				// messages to read
-				while (this.inPipe.getMessageQueue().size() == 0 || null == (readMessage = this.inPipe.read())) {
-					
-					try {
-						
-						this.inPipe.wait();
-					} catch (InterruptedException e) {
-						
-						e.printStackTrace();
-					}
-				}
-				
-				// after reading the value successfully, notifyAll other threads
-				// waiting on the
-				// Pipe
-				this.inPipe.notifyAll();
-			}
+			// the Transformer blocks till the inPipe has data
+			Message<T> readMessage = this.inPipe.read();
+			
+			// synchronized (this.inPipe) {
+			//
+			// // block and wait on the inPipe till it is filled with new
+			// // messages to read
+			// while (this.inPipe.getMessageQueue().size() == 0 || null ==
+			// (readMessage = this.inPipe.read())) {
+			//
+			// try {
+			//
+			// this.inPipe.wait();
+			// } catch (InterruptedException e) {
+			//
+			// e.printStackTrace();
+			// }
+			// }
+			//
+			// // after reading the value successfully, notifyAll other threads
+			// // waiting on the
+			// // Pipe
+			// this.inPipe.notifyAll();
+			// }
 			
 			if (!readMessage.isFail()) {
 				
@@ -121,12 +125,15 @@ public abstract class Transformer<T> extends Filter<T> {
 			// write to the outPipe after obtaining lock while preventing
 			// others to read
 			// from the outPipe
-			synchronized (this.outPipe) {
-				
-				this.outPipe.write(readMessage);
-				
-				this.outPipe.notifyAll();
-			}
+			
+			// synchronized (this.outPipe) {
+			//
+			// this.outPipe.write(readMessage);
+			//
+			// this.outPipe.notifyAll();
+			// }
+			
+			this.outPipe.write(readMessage);
 		}
 	}
 	

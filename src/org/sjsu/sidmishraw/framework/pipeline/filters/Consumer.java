@@ -79,23 +79,27 @@ public abstract class Consumer<T> extends Filter<T> {
 				break;
 			}
 			
-			Message<T> readMessage = null;
+			// Message<T> readMessage = null;
+			// consumer is forced to wait when the inPipe blocks for lack of
+			// data
+			Message<T> readMessage = this.inPipe.read();
 			
-			synchronized (this.inPipe) {
-				
-				while (this.inPipe.getMessageQueue().size() == 0 || null == (readMessage = this.inPipe.read())) {
-					
-					try {
-						
-						this.inPipe.wait();
-					} catch (InterruptedException e) {
-						
-						e.printStackTrace();
-					}
-				}
-				
-				this.inPipe.notifyAll();
-			}
+			// synchronized (this.inPipe) {
+			//
+			// while (this.inPipe.getMessageQueue().size() == 0 || null ==
+			// (readMessage = this.inPipe.read())) {
+			//
+			// try {
+			//
+			// this.inPipe.wait();
+			// } catch (InterruptedException e) {
+			//
+			// e.printStackTrace();
+			// }
+			// }
+			//
+			// this.inPipe.notifyAll();
+			// }
 			
 			if (!readMessage.isFail()) {
 				

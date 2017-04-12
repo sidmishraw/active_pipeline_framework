@@ -63,9 +63,22 @@ public class Pipe<T> {
 	 * @return message {@link Message}<T>
 	 *         The message read from the messageQueue
 	 */
-	public Message<T> read() {
+	public synchronized Message<T> read() {
 		
-		Message<T> message = this.getMessageQueue().poll();
+		Message<T> message = null;
+		
+		while (this.messageQueue.size() == 0 || null == (message = this.getMessageQueue().poll())) {
+			
+			try {
+				
+				this.wait();
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+		}
+		
+		this.notifyAll();
 		
 		return message;
 	}
@@ -76,8 +89,10 @@ public class Pipe<T> {
 	 *            {@link Message}<T>
 	 *            Writes the message to the pipe's message queue
 	 */
-	public void write(Message<T> message) {
+	public synchronized void write(Message<T> message) {
 		
 		this.getMessageQueue().add(message);
+		
+		this.notifyAll();
 	}
 }
