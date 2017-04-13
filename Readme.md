@@ -59,7 +59,7 @@ There are two types of passive filters.
 
 ### Full scope
 After completing the framework, use the framework to implement:
-* GarBage Band: GarBage Band is a digital music studio that processes streams of musical notes. Each note has frequency, amplitude, and duration. (These can be floating point numbers.) GB provides the following configurable filters:
+* *GarBage Band*: GarBage Band is a digital music studio that processes streams of musical notes. Each note has frequency, amplitude, and duration. (These can be floating point numbers.) GB provides the following configurable filters:
 
   * Amplifiers: Increases or decreases the volume of each note
   * Players: Play the notes through the computer's sound system.
@@ -402,4 +402,4 @@ Shutting down Consumer
 ```
 
 
-* [Airline Performance Analyzer:](http://www.cs.sjsu.edu/faculty/pearce/modules/projects/streams/index.htm)
+* [Airline Performance Analyzer](http://www.cs.sjsu.edu/faculty/pearce/modules/projects/streams/index.htm)

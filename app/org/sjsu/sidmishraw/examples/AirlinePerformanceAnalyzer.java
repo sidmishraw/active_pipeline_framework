@@ -27,16 +27,20 @@ public class AirlinePerformanceAnalyzer {
 	
 	public static Map<String, Integer> getTotalDelays(String fileName) {
 		
+		return null;
 	}
 	
 	public static Map<String, Double> getAverageDelays(String fileName) {
 		
+		return null;
 	}
 	
+	@SuppressWarnings("unused")
 	public static void displayTables(String fileName) {
 		
 		Map<String, Integer> totals = getTotalDelays(fileName);
-		Map<String, Integer> averages = getAverageDelays(fileName);
+		Map<String, Double> averages = getAverageDelays(fileName);
+		
 	}
 	
 	/**
