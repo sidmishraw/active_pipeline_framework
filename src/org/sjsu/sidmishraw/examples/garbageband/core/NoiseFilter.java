@@ -86,7 +86,7 @@ public class NoiseFilter extends Tester<Note> {
 		// update the predecessor note
 		this.predecessorNote = messageContent;
 		
-		System.out.println(String.format("̄Filter: Accepted Note: frequency=%s amplitude=%s duration=%s",
+		System.out.println(String.format("Filter: Accepted Note: frequency=%s amplitude=%s duration=%s",
 				messageContent.getFrequency(), messageContent.getAmplitude(), messageContent.getDuration()));
 		
 		return true;

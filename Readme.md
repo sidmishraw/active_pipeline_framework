@@ -74,340 +74,330 @@ Started Producer
 Started Transformer
 Started Tester
 Started Consumer
-Composer: Produced note# 0having frequency=666.2013 amplitude=20.21026 duration=472.5647
-Composer: Produced note# 1having frequency=517.35126 amplitude=52.87549 duration=910.1466
-Composer: Produced note# 2having frequency=746.4379 amplitude=28.557037 duration=110.38458
-Amplification: Amplified from old amplitude=20.21026 to new amplitude=10.21026
-Composer: Produced note# 3having frequency=280.36667 amplitude=38.065254 duration=542.3858
-Amplification: Amplified from old amplitude=52.87549 to new amplitude=42.87549
-Filter: Too quiet or too loud: volume=10.21026
-Amplification: Amplified from old amplitude=28.557037 to new amplitude=18.557037
-Composer: Produced note# 4having frequency=58.855713 amplitude=55.40378 duration=505.97687
-Amplification: Amplified from old amplitude=38.065254 to new amplitude=28.065254
-Composer: Produced note# 5having frequency=434.61902 amplitude=7.324725 duration=718.5907
-Amplification: Amplified from old amplitude=55.40378 to new amplitude=45.40378
-Composer: Produced note# 6having frequency=987.0742 amplitude=56.52883 duration=922.0839
-Amplification: Amplified from old amplitude=7.324725 to new amplitude=-2.6752748
-Composer: Produced note# 7having frequency=255.86963 amplitude=98.53513 duration=565.3445
-Amplification: Amplified from old amplitude=56.52883 to new amplitude=46.52883
-Composer: Produced note# 8having frequency=631.3636 amplitude=50.749893 duration=613.93634
-Amplification: Amplified from old amplitude=98.53513 to new amplitude=88.53513
-Composer: Produced note# 9having frequency=261.63293 amplitude=71.503265 duration=827.18097
-Amplification: Amplified from old amplitude=50.749893 to new amplitude=40.749893
-Composer: Produced note# 10having frequency=480.56073 amplitude=22.208225 duration=264.3794
-Amplification: Amplified from old amplitude=71.503265 to new amplitude=61.503265
-Composer: Produced note# 11having frequency=814.16455 amplitude=54.042625 duration=684.5597
-Amplification: Amplified from old amplitude=22.208225 to new amplitude=12.208225
-Composer: Produced note# 12having frequency=142.19206 amplitude=38.37043 duration=526.0545
-Amplification: Amplified from old amplitude=54.042625 to new amplitude=44.042625
-Composer: Produced note# 13having frequency=422.44815 amplitude=44.079243 duration=618.44415
-Amplification: Amplified from old amplitude=38.37043 to new amplitude=28.37043
-Composer: Produced note# 14having frequency=899.5592 amplitude=68.05462 duration=975.10565
-Amplification: Amplified from old amplitude=44.079243 to new amplitude=34.079243
-Composer: Produced note# 15having frequency=271.6995 amplitude=10.400266 duration=184.79932
-Amplification: Amplified from old amplitude=68.05462 to new amplitude=58.05462
-Composer: Produced note# 16having frequency=50.792038 amplitude=35.00771 duration=993.31287
-Amplification: Amplified from old amplitude=10.400266 to new amplitude=0.4002657
-Composer: Produced note# 17having frequency=653.92566 amplitude=45.966457 duration=607.94293
-Amplification: Amplified from old amplitude=35.00771 to new amplitude=25.00771
-Composer: Produced note# 18having frequency=929.5224 amplitude=35.879826 duration=165.32904
-Amplification: Amplified from old amplitude=45.966457 to new amplitude=35.966457
-Composer: Produced note# 19having frequency=826.1346 amplitude=11.934823 duration=944.0334
-Amplification: Amplified from old amplitude=35.879826 to new amplitude=25.879826
-Composer: Produced note# 20having frequency=937.1832 amplitude=13.122535 duration=927.2219
-Amplification: Amplified from old amplitude=11.934823 to new amplitude=1.934823
-Composer: Produced note# 21having frequency=604.1622 amplitude=85.4483 duration=72.67159
-Amplification: Amplified from old amplitude=13.122535 to new amplitude=3.1225348
-Composer: Produced note# 22having frequency=177.36703 amplitude=26.984066 duration=359.37695
-Amplification: Amplified from old amplitude=85.4483 to new amplitude=75.4483
-Composer: Produced note# 23having frequency=614.77435 amplitude=62.244312 duration=312.80273
-Amplification: Amplified from old amplitude=26.984066 to new amplitude=16.984066
-Composer: Produced note# 24having frequency=204.29617 amplitude=9.309256 duration=820.9541
-Amplification: Amplified from old amplitude=62.244312 to new amplitude=52.244312
-Composer: Produced note# 25having frequency=327.57144 amplitude=71.858604 duration=646.1734
-Amplification: Amplified from old amplitude=9.309256 to new amplitude=-0.6907444
-Composer: Produced note# 26having frequency=651.43414 amplitude=34.95506 duration=137.0179
-Amplification: Amplified from old amplitude=71.858604 to new amplitude=61.858604
-Composer: Produced note# 27having frequency=153.32973 amplitude=93.41374 duration=418.0556
-Amplification: Amplified from old amplitude=34.95506 to new amplitude=24.95506
-Composer: Produced note# 28having frequency=414.6791 amplitude=52.442963 duration=158.43904
-Amplification: Amplified from old amplitude=93.41374 to new amplitude=83.41374
-Composer: Produced note# 29having frequency=23.392141 amplitude=91.97237 duration=851.8904
-Amplification: Amplified from old amplitude=52.442963 to new amplitude=42.442963
-Composer: Produced note# 30having frequency=548.9251 amplitude=39.164627 duration=543.0155
-Amplification: Amplified from old amplitude=91.97237 to new amplitude=81.97237
-Composer: Produced note# 31having frequency=882.9527 amplitude=47.59226 duration=172.02968
-Amplification: Amplified from old amplitude=39.164627 to new amplitude=29.164627
-Composer: Produced note# 32having frequency=164.80565 amplitude=46.339478 duration=966.7903
-Amplification: Amplified from old amplitude=47.59226 to new amplitude=37.59226
-Composer: Produced note# 33having frequency=435.46384 amplitude=69.92306 duration=693.8895
-Amplification: Amplified from old amplitude=46.339478 to new amplitude=36.339478
-Composer: Produced note# 34having frequency=274.73355 amplitude=52.957386 duration=825.00323
-Amplification: Amplified from old amplitude=69.92306 to new amplitude=59.923058
-Composer: Produced note# 35having frequency=360.32672 amplitude=2.8280973 duration=455.24185
-Amplification: Amplified from old amplitude=52.957386 to new amplitude=42.957386
-Composer: Produced note# 36having frequency=489.34912 amplitude=14.750117 duration=699.22546
-Amplification: Amplified from old amplitude=2.8280973 to new amplitude=-7.1719027
-Composer: Produced note# 37having frequency=757.4412 amplitude=26.632011 duration=624.20087
-Amplification: Amplified from old amplitude=14.750117 to new amplitude=4.7501173
-Composer: Produced note# 38having frequency=363.96866 amplitude=84.586105 duration=134.33362
-Amplification: Amplified from old amplitude=26.632011 to new amplitude=16.632011
-Composer: Produced note# 39having frequency=121.6976 amplitude=94.26107 duration=302.83417
-Composer: Produced note# 40having frequency=298.66855 amplitude=69.721634 duration=908.7754
-Composer: Produced note# 41having frequency=156.67838 amplitude=9.76981 duration=521.61584
-Composer: Produced note# 42having frequency=279.38974 amplitude=30.799187 duration=889.70374
-Composer: Produced note# 43having frequency=438.94666 amplitude=75.57257 duration=790.57806
-Composer: Produced note# 44having frequency=442.9871 amplitude=68.31447 duration=134.18555
-Composer: Produced note# 45having frequency=937.9618 amplitude=48.088284 duration=961.64465
-Composer: Produced note# 46having frequency=11.113346 amplitude=37.720905 duration=383.51096
-Composer: Produced note# 47having frequency=695.26636 amplitude=78.15913 duration=615.583
-Composer: Produced note# 48having frequency=275.88336 amplitude=53.80938 duration=689.5791
-Composer: Produced note# 49having frequency=595.88074 amplitude=52.041607 duration=140.09744
-Composer: Produced note# 50having frequency=352.06915 amplitude=1.9580543 duration=534.02356
-Composer: Produced note# 51having frequency=659.19214 amplitude=34.418194 duration=246.38945
-Composer: Produced note# 52having frequency=852.48645 amplitude=97.165955 duration=744.62427
-Composer: Produced note# 53having frequency=208.18376 amplitude=12.750875 duration=359.94183
-Composer: Produced note# 54having frequency=24.648964 amplitude=29.869534 duration=544.828
-Composer: Produced note# 55having frequency=340.6369 amplitude=60.89042 duration=708.82385
-̄Filter: Accepted Note: frequency=517.35126 amplitude=42.87549 duration=910.1466
-Composer: Produced note# 56having frequency=480.34613 amplitude=82.934944 duration=732.01886
-Amplification: Amplified from old amplitude=84.586105 to new amplitude=74.586105
-Composer: Produced note# 57having frequency=654.46106 amplitude=54.55089 duration=954.63007
-Composer: Produced note# 58having frequency=949.218 amplitude=7.379186 duration=864.6279
-Composer: Produced note# 59having frequency=269.77063 amplitude=36.80558 duration=720.3827
-Filter: Too quiet or too loud: volume=18.557037
-Composer: Produced note# 60having frequency=543.04834 amplitude=3.3479095 duration=333.81677
-Composer: Produced note# 61having frequency=857.4629 amplitude=55.77758 duration=395.57123
-Playing: frequency=517.35126 amplitude=42.87549 duration=910.1466
-Amplification: Amplified from old amplitude=94.26107 to new amplitude=84.26107
-Composer: Produced note# 62having frequency=703.00543 amplitude=86.29117 duration=333.3736
-Filter: Too quiet or too loud: volume=28.065254
-Composer: Produced note# 63having frequency=494.3766 amplitude=30.659496 duration=158.23615
-Composer: Produced note# 64having frequency=569.05884 amplitude=58.02397 duration=238.51067
-Composer: Produced note# 65having frequency=420.6333 amplitude=15.107369 duration=967.82745
-Composer: Produced note# 66having frequency=411.30316 amplitude=94.18152 duration=326.66223
-̄Filter: Accepted Note: frequency=58.855713 amplitude=45.40378 duration=505.97687
-Amplification: Amplified from old amplitude=69.721634 to new amplitude=59.721634
-Amplification: Amplified from old amplitude=9.76981 to new amplitude=-0.23019028
-Amplification: Amplified from old amplitude=30.799187 to new amplitude=20.799187
-Amplification: Amplified from old amplitude=75.57257 to new amplitude=65.57257
-Amplification: Amplified from old amplitude=68.31447 to new amplitude=58.31447
-Amplification: Amplified from old amplitude=48.088284 to new amplitude=38.088284
-Amplification: Amplified from old amplitude=37.720905 to new amplitude=27.720905
-Amplification: Amplified from old amplitude=78.15913 to new amplitude=68.15913
-Amplification: Amplified from old amplitude=53.80938 to new amplitude=43.80938
-Amplification: Amplified from old amplitude=52.041607 to new amplitude=42.041607
-Amplification: Amplified from old amplitude=1.9580543 to new amplitude=-8.041945
-Amplification: Amplified from old amplitude=34.418194 to new amplitude=24.418194
-Amplification: Amplified from old amplitude=97.165955 to new amplitude=87.165955
-Amplification: Amplified from old amplitude=12.750875 to new amplitude=2.7508755
-Amplification: Amplified from old amplitude=29.869534 to new amplitude=19.869534
-Amplification: Amplified from old amplitude=60.89042 to new amplitude=50.89042
-Amplification: Amplified from old amplitude=82.934944 to new amplitude=72.934944
-Amplification: Amplified from old amplitude=54.55089 to new amplitude=44.55089
-Amplification: Amplified from old amplitude=7.379186 to new amplitude=-2.6208138
-Filter: Too quiet or too loud: volume=-2.6752748
-Composer: Produced note# 67having frequency=429.38852 amplitude=31.580532 duration=922.2554
-Composer: Produced note# 68having frequency=630.1711 amplitude=34.93701 duration=67.34413
-Amplification: Amplified from old amplitude=36.80558 to new amplitude=26.80558
-Composer: Produced note# 69having frequency=701.91095 amplitude=67.58724 duration=512.9472
-Amplification: Amplified from old amplitude=3.3479095 to new amplitude=-6.6520905
-Composer: Produced note# 70having frequency=981.95496 amplitude=2.1046937 duration=612.3482
-̄Filter: Accepted Note: frequency=987.0742 amplitude=46.52883 duration=922.0839
-Composer: Produced note# 71having frequency=527.26434 amplitude=43.72329 duration=541.5026
-Composer: Produced note# 72having frequency=191.45071 amplitude=71.18006 duration=21.718681
-Composer: Produced note# 73having frequency=662.07965 amplitude=3.1639814 duration=153.99855
-̄Filter: Accepted Note: frequency=255.86963 amplitude=88.53513 duration=565.3445
-Composer: Produced note# 74having frequency=537.86176 amplitude=24.446465 duration=201.23082
-Composer: Produced note# 75having frequency=130.83684 amplitude=98.614174 duration=929.643
-Composer: Produced note# 76having frequency=204.79286 amplitude=58.64599 duration=523.8261
-Amplification: Amplified from old amplitude=55.77758 to new amplitude=45.77758
-Composer: Produced note# 77having frequency=342.86832 amplitude=29.756344 duration=276.83252
-̄Filter: Accepted Note: frequency=631.3636 amplitude=40.749893 duration=613.93634
-Amplification: Amplified from old amplitude=86.29117 to new amplitude=76.29117
-̄Filter: Accepted Note: frequency=261.63293 amplitude=61.503265 duration=827.18097
-Filter: Too quiet or too loud: volume=12.208225
-̄Filter: Accepted Note: frequency=814.16455 amplitude=44.042625 duration=684.5597
-Filter: Too quiet or too loud: volume=28.37043
-̄Filter: Accepted Note: frequency=422.44815 amplitude=34.079243 duration=618.44415
-̄Filter: Accepted Note: frequency=899.5592 amplitude=58.05462 duration=975.10565
-Filter: Too quiet or too loud: volume=0.4002657
-Filter: Too quiet or too loud: volume=25.00771
-̄Filter: Accepted Note: frequency=653.92566 amplitude=35.966457 duration=607.94293
-Filter: Too quiet or too loud: volume=25.879826
-Filter: Too quiet or too loud: volume=1.934823
-Filter: Too quiet or too loud: volume=3.1225348
-Filter: Too short of a duration: duration=72.67159
-Filter: Too quiet or too loud: volume=16.984066
-Filter: Too short of a duration: duration=312.80273
-Filter: Too quiet or too loud: volume=-0.6907444
-̄Filter: Accepted Note: frequency=327.57144 amplitude=61.858604 duration=646.1734
-Filter: Too quiet or too loud: volume=24.95506
-Filter: Too short of a duration: duration=418.0556
-Filter: Too short of a duration: duration=158.43904
-̄Filter: Accepted Note: frequency=23.392141 amplitude=81.97237 duration=851.8904
-Filter: Too quiet or too loud: volume=29.164627
-Filter: Too short of a duration: duration=172.02968
-̄Filter: Accepted Note: frequency=164.80565 amplitude=36.339478 duration=966.7903
-Composer: Produced note# 78having frequency=856.9109 amplitude=41.6107 duration=473.07986
-̄Filter: Accepted Note: frequency=435.46384 amplitude=59.923058 duration=693.8895
-Composer: Produced note# 79having frequency=226.68678 amplitude=19.77619 duration=683.8394
-Composer: Produced note# 80having frequency=978.27313 amplitude=81.17404 duration=304.05545
-Composer: Produced note# 81having frequency=856.86115 amplitude=35.508095 duration=456.07214
-̄Filter: Accepted Note: frequency=274.73355 amplitude=42.957386 duration=825.00323
-Composer: Produced note# 82having frequency=790.5794 amplitude=38.381584 duration=200.30481
-Filter: Too quiet or too loud: volume=-7.1719027
-Composer: Produced note# 83having frequency=837.3894 amplitude=7.7598515 duration=198.7564
-Filter: Too quiet or too loud: volume=4.7501173
-Filter: Too quiet or too loud: volume=16.632011
-Filter: Too short of a duration: duration=134.33362
-Composer: Produced note# 84having frequency=467.4899 amplitude=96.664314 duration=116.283295
-Filter: Too short of a duration: duration=302.83417
-Composer: Produced note# 85having frequency=727.7372 amplitude=36.249947 duration=897.0322
-Composer: Produced note# 86having frequency=789.8117 amplitude=10.479551 duration=773.44135
-Composer: Produced note# 87having frequency=593.93256 amplitude=31.173122 duration=503.5673
-Amplification: Amplified from old amplitude=30.659496 to new amplitude=20.659496
-Composer: Produced note# 88having frequency=241.96828 amplitude=81.10218 duration=892.5292
-̄Filter: Accepted Note: frequency=298.66855 amplitude=59.721634 duration=908.7754
-Filter: Too quiet or too loud: volume=-0.23019028
-Composer: Produced note# 89having frequency=63.945354 amplitude=47.912933 duration=142.93599
-Amplification: Amplified from old amplitude=58.02397 to new amplitude=48.02397
-Composer: Produced note# 90having frequency=824.86816 amplitude=58.222122 duration=640.51733
-Filter: Too quiet or too loud: volume=20.799187
-Composer: Produced note# 91having frequency=511.31744 amplitude=47.20421 duration=419.07822
-Composer: Produced note# 92having frequency=633.8017 amplitude=81.656494 duration=100.02166
-̄Filter: Accepted Note: frequency=438.94666 amplitude=65.57257 duration=790.57806
-Filter: Too short of a duration: duration=134.18555
-Amplification: Amplified from old amplitude=15.107369 to new amplitude=5.1073694
-Amplification: Amplified from old amplitude=94.18152 to new amplitude=84.18152
-Amplification: Amplified from old amplitude=31.580532 to new amplitude=21.580532
-Composer: Produced note# 93having frequency=345.38437 amplitude=1.6500592 duration=27.03911
-Amplification: Amplified from old amplitude=34.93701 to new amplitude=24.937012
-Composer: Produced note# 94having frequency=408.75006 amplitude=85.803345 duration=609.1648
-Amplification: Amplified from old amplitude=67.58724 to new amplitude=57.587242
-Composer: Produced note# 95having frequency=991.2919 amplitude=44.76502 duration=819.793
-̄Filter: Accepted Note: frequency=937.9618 amplitude=38.088284 duration=961.64465
-Composer: Produced note# 96having frequency=162.9002 amplitude=16.520988 duration=605.4115
-Amplification: Amplified from old amplitude=2.1046937 to new amplitude=-7.8953066
-Composer: Produced note# 97having frequency=569.34973 amplitude=1.2085497 duration=881.8511
-Filter: Frequency is inaudible: frequency=11.113346
-Composer: Produced note# 98having frequency=192.50905 amplitude=59.46504 duration=28.271675
-Composer: Produced note# 99having frequency=155.0762 amplitude=15.422857 duration=846.08624
+Composer: Produced note# 0having frequency=85.482956 amplitude=94.50554 duration=60.55999
+Composer: Produced note# 1having frequency=869.30493 amplitude=96.22232 duration=811.3139
+Composer: Produced note# 2having frequency=500.16284 amplitude=52.65851 duration=979.1076
+Amplification: Amplified from old amplitude=94.50554 to new amplitude=84.50554
+Composer: Produced note# 3having frequency=863.0429 amplitude=56.692444 duration=550.13715
+Amplification: Amplified from old amplitude=96.22232 to new amplitude=86.22232
+Filter: Too short of a duration: duration=60.55999
+Amplification: Amplified from old amplitude=52.65851 to new amplitude=42.65851
+Composer: Produced note# 4having frequency=75.717865 amplitude=9.422999 duration=431.39737
+Amplification: Amplified from old amplitude=56.692444 to new amplitude=46.692444
+Composer: Produced note# 5having frequency=465.69467 amplitude=46.594543 duration=222.2799
+Amplification: Amplified from old amplitude=9.422999 to new amplitude=-0.5770006
+Composer: Produced note# 6having frequency=4.881561 amplitude=8.855963 duration=14.80794
+Amplification: Amplified from old amplitude=46.594543 to new amplitude=36.594543
+Composer: Produced note# 7having frequency=91.95179 amplitude=61.639416 duration=106.689575
+Amplification: Amplified from old amplitude=8.855963 to new amplitude=-1.1440372
+Composer: Produced note# 8having frequency=928.17786 amplitude=95.01767 duration=117.40983
+Amplification: Amplified from old amplitude=61.639416 to new amplitude=51.639416
+Amplification: Amplified from old amplitude=95.01767 to new amplitude=85.01767
+Composer: Produced note# 9having frequency=723.31305 amplitude=77.896675 duration=193.85094
+Amplification: Amplified from old amplitude=77.896675 to new amplitude=67.896675
+Composer: Produced note# 10having frequency=451.477 amplitude=5.3450823 duration=12.561202
+Amplification: Amplified from old amplitude=5.3450823 to new amplitude=-4.6549177
+Composer: Produced note# 11having frequency=554.71814 amplitude=4.178339 duration=474.50186
+Amplification: Amplified from old amplitude=4.178339 to new amplitude=-5.821661
+Composer: Produced note# 12having frequency=556.13635 amplitude=29.852068 duration=438.81268
+Amplification: Amplified from old amplitude=29.852068 to new amplitude=19.852068
+Composer: Produced note# 13having frequency=624.5248 amplitude=73.0385 duration=909.5008
+Amplification: Amplified from old amplitude=73.0385 to new amplitude=63.038498
+Composer: Produced note# 14having frequency=277.22006 amplitude=69.547935 duration=988.06476
+Composer: Produced note# 15having frequency=376.73276 amplitude=5.9805098 duration=78.98778
+Amplification: Amplified from old amplitude=69.547935 to new amplitude=59.547935
+Composer: Produced note# 16having frequency=104.71755 amplitude=67.15449 duration=276.1782
+Amplification: Amplified from old amplitude=5.9805098 to new amplitude=-4.0194902
+Composer: Produced note# 17having frequency=478.80423 amplitude=5.5795135 duration=476.37994
+Amplification: Amplified from old amplitude=67.15449 to new amplitude=57.154488
+Composer: Produced note# 18having frequency=187.91872 amplitude=17.459208 duration=788.4428
+Amplification: Amplified from old amplitude=5.5795135 to new amplitude=-4.4204865
+Composer: Produced note# 19having frequency=374.2801 amplitude=4.343504 duration=879.797
+Amplification: Amplified from old amplitude=17.459208 to new amplitude=7.4592075
+Composer: Produced note# 20having frequency=313.97897 amplitude=10.683542 duration=335.7856
+Amplification: Amplified from old amplitude=4.343504 to new amplitude=-5.656496
+Amplification: Amplified from old amplitude=10.683542 to new amplitude=0.68354225
+Composer: Produced note# 21having frequency=364.5544 amplitude=8.057136 duration=511.20102
+Amplification: Amplified from old amplitude=8.057136 to new amplitude=-1.9428644
+Composer: Produced note# 22having frequency=304.34042 amplitude=56.844086 duration=936.15063
+Composer: Produced note# 23having frequency=976.3782 amplitude=66.10886 duration=192.97868
+Amplification: Amplified from old amplitude=56.844086 to new amplitude=46.844086
+Composer: Produced note# 24having frequency=246.06555 amplitude=21.645647 duration=859.13257
+Amplification: Amplified from old amplitude=66.10886 to new amplitude=56.108856
+Composer: Produced note# 25having frequency=248.3952 amplitude=90.873665 duration=216.72243
+Amplification: Amplified from old amplitude=21.645647 to new amplitude=11.645647
+Amplification: Amplified from old amplitude=90.873665 to new amplitude=80.873665
+Composer: Produced note# 26having frequency=38.432957 amplitude=67.52738 duration=448.1545
+Amplification: Amplified from old amplitude=67.52738 to new amplitude=57.52738
+Composer: Produced note# 27having frequency=350.59613 amplitude=26.463121 duration=665.884
+Amplification: Amplified from old amplitude=26.463121 to new amplitude=16.463121
+Composer: Produced note# 28having frequency=265.8592 amplitude=91.33148 duration=268.4812
+Amplification: Amplified from old amplitude=91.33148 to new amplitude=81.33148
+Composer: Produced note# 29having frequency=412.6777 amplitude=17.932987 duration=429.72034
+Amplification: Amplified from old amplitude=17.932987 to new amplitude=7.932987
+Composer: Produced note# 30having frequency=646.8237 amplitude=60.35777 duration=178.8457
+Amplification: Amplified from old amplitude=60.35777 to new amplitude=50.35777
+Composer: Produced note# 31having frequency=179.70688 amplitude=49.316372 duration=839.4165
+Amplification: Amplified from old amplitude=49.316372 to new amplitude=39.316372
+Composer: Produced note# 32having frequency=264.08075 amplitude=56.695045 duration=284.74463
+Amplification: Amplified from old amplitude=56.695045 to new amplitude=46.695045
+Composer: Produced note# 33having frequency=927.9965 amplitude=84.95198 duration=575.823
+Amplification: Amplified from old amplitude=84.95198 to new amplitude=74.95198
+Composer: Produced note# 34having frequency=215.6369 amplitude=12.835354 duration=427.86713
+Composer: Produced note# 35having frequency=48.13832 amplitude=78.73758 duration=640.89557
+Amplification: Amplified from old amplitude=12.835354 to new amplitude=2.8353539
+Composer: Produced note# 36having frequency=414.4239 amplitude=60.46092 duration=648.33746
+Amplification: Amplified from old amplitude=78.73758 to new amplitude=68.73758
+Composer: Produced note# 37having frequency=676.3232 amplitude=33.161514 duration=788.48114
+Amplification: Amplified from old amplitude=60.46092 to new amplitude=50.46092
+Composer: Produced note# 38having frequency=15.03849 amplitude=17.597412 duration=238.96301
+Amplification: Amplified from old amplitude=33.161514 to new amplitude=23.161514
+Composer: Produced note# 39having frequency=123.961624 amplitude=93.510445 duration=470.52032
+Amplification: Amplified from old amplitude=17.597412 to new amplitude=7.597412
+Composer: Produced note# 40having frequency=957.2309 amplitude=32.845127 duration=262.9783
+Amplification: Amplified from old amplitude=93.510445 to new amplitude=83.510445
+Composer: Produced note# 41having frequency=422.98334 amplitude=10.069686 duration=188.48026
+Amplification: Amplified from old amplitude=32.845127 to new amplitude=22.845127
+Composer: Produced note# 42having frequency=459.4988 amplitude=58.787315 duration=441.8876
+Amplification: Amplified from old amplitude=10.069686 to new amplitude=0.069685936
+Composer: Produced note# 43having frequency=40.2506 amplitude=25.901525 duration=580.22125
+Amplification: Amplified from old amplitude=58.787315 to new amplitude=48.787315
+Composer: Produced note# 44having frequency=61.015247 amplitude=13.389778 duration=282.85654
+Amplification: Amplified from old amplitude=25.901525 to new amplitude=15.9015255
+Composer: Produced note# 45having frequency=565.1918 amplitude=63.20504 duration=838.87274
+Amplification: Amplified from old amplitude=13.389778 to new amplitude=3.3897781
+Composer: Produced note# 46having frequency=866.2133 amplitude=66.147 duration=189.56525
+Filter: Accepted Note: frequency=869.30493 amplitude=86.22232 duration=811.3139
+Composer: Produced note# 47having frequency=831.6015 amplitude=7.3551774 duration=559.8188
+Composer: Produced note# 48having frequency=826.8911 amplitude=44.575703 duration=303.16055
+Playing: frequency=869.30493 amplitude=86.22232 duration=811.3139
+Composer: Produced note# 49having frequency=472.54156 amplitude=83.10888 duration=152.32808
+Composer: Produced note# 50having frequency=69.981575 amplitude=41.41091 duration=190.19968
+Composer: Produced note# 51having frequency=70.80716 amplitude=69.013374 duration=774.778
+Composer: Produced note# 52having frequency=357.18805 amplitude=42.2597 duration=543.22876
+Composer: Produced note# 53having frequency=373.02905 amplitude=28.494476 duration=425.93765
+Composer: Produced note# 54having frequency=183.13193 amplitude=96.90762 duration=365.6555
+Composer: Produced note# 55having frequency=43.80345 amplitude=43.320335 duration=953.63745
+Composer: Produced note# 56having frequency=396.6735 amplitude=63.228355 duration=278.72147
+Amplification: Amplified from old amplitude=63.20504 to new amplitude=53.20504
+Composer: Produced note# 57having frequency=118.3089 amplitude=47.236465 duration=430.98462
+Composer: Produced note# 58having frequency=726.078 amplitude=33.511837 duration=305.66513
+Composer: Produced note# 59having frequency=744.6135 amplitude=24.182951 duration=121.6405
+Filter: Accepted Note: frequency=500.16284 amplitude=42.65851 duration=979.1076
+Composer: Produced note# 60having frequency=741.4412 amplitude=57.255466 duration=21.9872
+Amplification: Amplified from old amplitude=66.147 to new amplitude=56.147003
+Composer: Produced note# 61having frequency=867.89014 amplitude=8.946103 duration=302.74088
+Amplification: Amplified from old amplitude=7.3551774 to new amplitude=-2.6448226
+Composer: Produced note# 62having frequency=796.1982 amplitude=57.498394 duration=254.29195
+Amplification: Amplified from old amplitude=44.575703 to new amplitude=34.575703
+Composer: Produced note# 63having frequency=493.37292 amplitude=96.49697 duration=951.74536
+Filter: Accepted Note: frequency=863.0429 amplitude=46.692444 duration=550.13715
+Composer: Produced note# 64having frequency=479.12192 amplitude=27.772856 duration=767.33344
+Amplification: Amplified from old amplitude=83.10888 to new amplitude=73.10888
+Composer: Produced note# 65having frequency=933.2848 amplitude=75.92123 duration=694.89264
+Amplification: Amplified from old amplitude=41.41091 to new amplitude=31.410912
+Filter: Too quiet or too loud: volume=-0.5770006
+Filter: Too short of a duration: duration=222.2799
+Filter: Frequency is inaudible: frequency=4.881561
+Filter: Too short of a duration: duration=106.689575
+Filter: Too short of a duration: duration=117.40983
+Amplification: Amplified from old amplitude=69.013374 to new amplitude=59.013374
+Composer: Produced note# 66having frequency=445.25592 amplitude=20.02179 duration=228.40672
+Amplification: Amplified from old amplitude=42.2597 to new amplitude=32.2597
+Composer: Produced note# 67having frequency=113.90448 amplitude=60.425587 duration=518.2271
+Amplification: Amplified from old amplitude=28.494476 to new amplitude=18.494476
+Composer: Produced note# 68having frequency=960.26373 amplitude=16.758627 duration=311.62173
+Filter: Too short of a duration: duration=193.85094
+Composer: Produced note# 69having frequency=732.4991 amplitude=39.728363 duration=9.029865
+Amplification: Amplified from old amplitude=96.90762 to new amplitude=86.90762
+Composer: Produced note# 70having frequency=348.39053 amplitude=79.67759 duration=402.06015
+Amplification: Amplified from old amplitude=43.320335 to new amplitude=33.320335
+Filter: Too quiet or too loud: volume=-4.6549177
+Amplification: Amplified from old amplitude=63.228355 to new amplitude=53.228355
+Composer: Produced note# 71having frequency=21.561146 amplitude=44.980846 duration=69.06211
+Amplification: Amplified from old amplitude=47.236465 to new amplitude=37.236465
+Composer: Produced note# 72having frequency=539.74097 amplitude=41.67846 duration=392.64297
+Amplification: Amplified from old amplitude=33.511837 to new amplitude=23.511837
+Composer: Produced note# 73having frequency=864.7728 amplitude=9.089136 duration=750.08264
+Filter: Too quiet or too loud: volume=-5.821661
+Composer: Produced note# 74having frequency=85.500656 amplitude=27.246565 duration=322.12286
+Amplification: Amplified from old amplitude=24.182951 to new amplitude=14.182951
+Amplification: Amplified from old amplitude=57.255466 to new amplitude=47.255466
+Filter: Too quiet or too loud: volume=19.852068
+Amplification: Amplified from old amplitude=8.946103 to new amplitude=-1.0538969
+Amplification: Amplified from old amplitude=57.498394 to new amplitude=47.498394
+Amplification: Amplified from old amplitude=96.49697 to new amplitude=86.49697
+Amplification: Amplified from old amplitude=27.772856 to new amplitude=17.772856
+Composer: Produced note# 75having frequency=377.5354 amplitude=44.416855 duration=951.09064
+Composer: Produced note# 76having frequency=635.71497 amplitude=29.144596 duration=831.8658
+Composer: Produced note# 77having frequency=182.41006 amplitude=14.963776 duration=960.92267
+Composer: Produced note# 78having frequency=672.60974 amplitude=11.120176 duration=609.21216
+Composer: Produced note# 79having frequency=305.83273 amplitude=40.159164 duration=197.11983
+Composer: Produced note# 80having frequency=872.99097 amplitude=32.89141 duration=825.11847
+Composer: Produced note# 81having frequency=562.7626 amplitude=34.673603 duration=872.7942
+Composer: Produced note# 82having frequency=866.5721 amplitude=47.569622 duration=398.9029
+Composer: Produced note# 83having frequency=715.30133 amplitude=47.011513 duration=454.77295
+Composer: Produced note# 84having frequency=901.0523 amplitude=17.9294 duration=334.19162
+Composer: Produced note# 85having frequency=552.00214 amplitude=66.33733 duration=246.94473
+Composer: Produced note# 86having frequency=922.2391 amplitude=48.500206 duration=222.42761
+Composer: Produced note# 87having frequency=557.5133 amplitude=24.024088 duration=577.2554
+Amplification: Amplified from old amplitude=75.92123 to new amplitude=65.92123
+Filter: Accepted Note: frequency=624.5248 amplitude=63.038498 duration=909.5008
+Amplification: Amplified from old amplitude=20.02179 to new amplitude=10.02179
+Amplification: Amplified from old amplitude=60.425587 to new amplitude=50.425587
+Amplification: Amplified from old amplitude=16.758627 to new amplitude=6.758627
+Composer: Produced note# 88having frequency=157.43953 amplitude=22.561014 duration=370.58865
+Amplification: Amplified from old amplitude=39.728363 to new amplitude=29.728363
+Filter: Accepted Note: frequency=277.22006 amplitude=59.547935 duration=988.06476
+Amplification: Amplified from old amplitude=79.67759 to new amplitude=69.67759
+Composer: Produced note# 89having frequency=132.69519 amplitude=84.066635 duration=303.23547
+Amplification: Amplified from old amplitude=44.980846 to new amplitude=34.980846
+Composer: Produced note# 90having frequency=597.5103 amplitude=70.998085 duration=169.52115
+Filter: Too quiet or too loud: volume=-4.0194902
+Composer: Produced note# 91having frequency=970.38135 amplitude=59.469204 duration=784.883
+Amplification: Amplified from old amplitude=41.67846 to new amplitude=31.67846
+Composer: Produced note# 92having frequency=633.7536 amplitude=6.5230846 duration=323.99475
+Filter: Too short of a duration: duration=276.1782
+Composer: Produced note# 93having frequency=757.59705 amplitude=53.326374 duration=675.2503
+Filter: Too quiet or too loud: volume=-4.4204865
+Composer: Produced note# 94having frequency=304.8511 amplitude=47.326893 duration=823.91
+Amplification: Amplified from old amplitude=9.089136 to new amplitude=-0.9108639
+Composer: Produced note# 95having frequency=535.3248 amplitude=22.076702 duration=336.6453
+Filter: Too quiet or too loud: volume=7.4592075
+Composer: Produced note# 96having frequency=509.68115 amplitude=82.22118 duration=800.3156
+Amplification: Amplified from old amplitude=27.246565 to new amplitude=17.246565
+Composer: Produced note# 97having frequency=109.51793 amplitude=14.234567 duration=92.65202
+Filter: Too quiet or too loud: volume=-5.656496
+Filter: Too quiet or too loud: volume=0.68354225
+Filter: Too quiet or too loud: volume=-1.9428644
+Composer: Produced note# 98having frequency=863.98773 amplitude=87.7084 duration=413.87857
+Composer: Produced note# 99having frequency=61.243294 amplitude=14.67728 duration=280.0672
 Shutting down Producer
-̄Filter: Accepted Note: frequency=695.26636 amplitude=68.15913 duration=615.583
-Amplification: Amplified from old amplitude=43.72329 to new amplitude=33.72329
-Amplification: Amplified from old amplitude=71.18006 to new amplitude=61.18006
-Amplification: Amplified from old amplitude=3.1639814 to new amplitude=-6.8360186
-̄Filter: Accepted Note: frequency=275.88336 amplitude=43.80938 duration=689.5791
-Filter: Too short of a duration: duration=140.09744
-Amplification: Amplified from old amplitude=24.446465 to new amplitude=14.446465
-Filter: Too quiet or too loud: volume=-8.041945
-Amplification: Amplified from old amplitude=98.614174 to new amplitude=88.614174
-Amplification: Amplified from old amplitude=58.64599 to new amplitude=48.64599
-Filter: Too quiet or too loud: volume=24.418194
-Amplification: Amplified from old amplitude=29.756344 to new amplitude=19.756344
-Amplification: Amplified from old amplitude=41.6107 to new amplitude=31.610699
-̄Filter: Accepted Note: frequency=852.48645 amplitude=87.165955 duration=744.62427
-Amplification: Amplified from old amplitude=19.77619 to new amplitude=9.77619
-Filter: Too quiet or too loud: volume=2.7508755
-Amplification: Amplified from old amplitude=81.17404 to new amplitude=71.17404
-Filter: Too quiet or too loud: volume=19.869534
-Amplification: Amplified from old amplitude=35.508095 to new amplitude=25.508095
-Amplification: Amplified from old amplitude=38.381584 to new amplitude=28.381584
-Amplification: Amplified from old amplitude=7.7598515 to new amplitude=-2.2401485
-̄Filter: Accepted Note: frequency=340.6369 amplitude=50.89042 duration=708.82385
-Amplification: Amplified from old amplitude=96.664314 to new amplitude=86.664314
-Amplification: Amplified from old amplitude=36.249947 to new amplitude=26.249947
-Amplification: Amplified from old amplitude=10.479551 to new amplitude=0.47955132
-̄Filter: Accepted Note: frequency=480.34613 amplitude=72.934944 duration=732.01886
-Amplification: Amplified from old amplitude=31.173122 to new amplitude=21.173122
-Amplification: Amplified from old amplitude=81.10218 to new amplitude=71.10218
-̄Filter: Accepted Note: frequency=654.46106 amplitude=44.55089 duration=954.63007
-Amplification: Amplified from old amplitude=47.912933 to new amplitude=37.912933
-Filter: Too quiet or too loud: volume=-2.6208138
-Filter: Too quiet or too loud: volume=26.80558
-Amplification: Amplified from old amplitude=58.222122 to new amplitude=48.222122
-Filter: Too quiet or too loud: volume=-6.6520905
-Filter: Too short of a duration: duration=395.57123
-Filter: Too short of a duration: duration=333.3736
-Filter: Too quiet or too loud: volume=20.659496
-Filter: Too short of a duration: duration=238.51067
-Filter: Too quiet or too loud: volume=5.1073694
-Amplification: Amplified from old amplitude=47.20421 to new amplitude=37.20421
-Filter: Too short of a duration: duration=326.66223
-Filter: Too quiet or too loud: volume=21.580532
-Amplification: Amplified from old amplitude=81.656494 to new amplitude=71.656494
-Filter: Too quiet or too loud: volume=24.937012
-Amplification: Amplified from old amplitude=1.6500592 to new amplitude=-8.349941
-Amplification: Amplified from old amplitude=85.803345 to new amplitude=75.803345
-Amplification: Amplified from old amplitude=44.76502 to new amplitude=34.76502
-̄Filter: Accepted Note: frequency=701.91095 amplitude=57.587242 duration=512.9472
-Amplification: Amplified from old amplitude=16.520988 to new amplitude=6.5209885
-Filter: Too quiet or too loud: volume=-7.8953066
-Amplification: Amplified from old amplitude=1.2085497 to new amplitude=-8.7914505
-Amplification: Amplified from old amplitude=59.46504 to new amplitude=49.46504
-Amplification: Amplified from old amplitude=15.422857 to new amplitude=5.4228573
+Filter: Accepted Note: frequency=304.34042 amplitude=46.844086 duration=936.15063
+Amplification: Amplified from old amplitude=44.416855 to new amplitude=34.416855
+Filter: Too short of a duration: duration=192.97868
+Amplification: Amplified from old amplitude=29.144596 to new amplitude=19.144596
+Filter: Too quiet or too loud: volume=11.645647
+Amplification: Amplified from old amplitude=14.963776 to new amplitude=4.9637756
+Filter: Too short of a duration: duration=216.72243
+Amplification: Amplified from old amplitude=11.120176 to new amplitude=1.1201763
+Filter: Too short of a duration: duration=448.1545
+Amplification: Amplified from old amplitude=40.159164 to new amplitude=30.159164
+Filter: Too quiet or too loud: volume=16.463121
+Amplification: Amplified from old amplitude=32.89141 to new amplitude=22.89141
+Filter: Too short of a duration: duration=268.4812
+Filter: Too quiet or too loud: volume=7.932987
+Filter: Too short of a duration: duration=178.8457
+Amplification: Amplified from old amplitude=34.673603 to new amplitude=24.673603
+Amplification: Amplified from old amplitude=47.569622 to new amplitude=37.569622
+Amplification: Amplified from old amplitude=47.011513 to new amplitude=37.011513
+Amplification: Amplified from old amplitude=17.9294 to new amplitude=7.9293995
+Amplification: Amplified from old amplitude=66.33733 to new amplitude=56.337334
+Amplification: Amplified from old amplitude=48.500206 to new amplitude=38.500206
+Amplification: Amplified from old amplitude=24.024088 to new amplitude=14.024088
+Amplification: Amplified from old amplitude=22.561014 to new amplitude=12.561014
+Amplification: Amplified from old amplitude=84.066635 to new amplitude=74.066635
+Amplification: Amplified from old amplitude=70.998085 to new amplitude=60.998085
+Amplification: Amplified from old amplitude=59.469204 to new amplitude=49.469204
+Amplification: Amplified from old amplitude=6.5230846 to new amplitude=-3.4769154
+Amplification: Amplified from old amplitude=53.326374 to new amplitude=43.326374
+Amplification: Amplified from old amplitude=47.326893 to new amplitude=37.326893
+Amplification: Amplified from old amplitude=22.076702 to new amplitude=12.076702
+Amplification: Amplified from old amplitude=82.22118 to new amplitude=72.22118
+Amplification: Amplified from old amplitude=14.234567 to new amplitude=4.2345667
+Amplification: Amplified from old amplitude=87.7084 to new amplitude=77.7084
+Amplification: Amplified from old amplitude=14.67728 to new amplitude=4.6772804
 Shutting down Transformer
-̄Filter: Accepted Note: frequency=527.26434 amplitude=33.72329 duration=541.5026
-Filter: Too short of a duration: duration=21.718681
-Filter: Too quiet or too loud: volume=-6.8360186
-Filter: Too quiet or too loud: volume=14.446465
-Filter: The note is suspicious: amplitude=88.614174 predecessor's amplitude=33.72329
-̄Filter: Accepted Note: frequency=204.79286 amplitude=48.64599 duration=523.8261
-Filter: Too quiet or too loud: volume=19.756344
-Filter: Too short of a duration: duration=473.07986
-Filter: Too quiet or too loud: volume=9.77619
-Filter: Too short of a duration: duration=304.05545
-Filter: Too quiet or too loud: volume=25.508095
-Filter: Too quiet or too loud: volume=28.381584
-Filter: Too quiet or too loud: volume=-2.2401485
-Filter: Too short of a duration: duration=116.283295
-Filter: Too quiet or too loud: volume=26.249947
-Filter: Too quiet or too loud: volume=0.47955132
-Filter: Too quiet or too loud: volume=21.173122
-̄Filter: Accepted Note: frequency=241.96828 amplitude=71.10218 duration=892.5292
-Filter: Too short of a duration: duration=142.93599
-̄Filter: Accepted Note: frequency=824.86816 amplitude=48.222122 duration=640.51733
-Filter: Too short of a duration: duration=419.07822
-Filter: Too short of a duration: duration=100.02166
-Filter: Too quiet or too loud: volume=-8.349941
-̄Filter: Accepted Note: frequency=408.75006 amplitude=75.803345 duration=609.1648
-̄Filter: Accepted Note: frequency=991.2919 amplitude=34.76502 duration=819.793
-Filter: Too quiet or too loud: volume=6.5209885
-Filter: Too quiet or too loud: volume=-8.7914505
-Filter: Too short of a duration: duration=28.271675
+Filter: Accepted Note: frequency=179.70688 amplitude=39.316372 duration=839.4165
+Filter: Too short of a duration: duration=284.74463
+Filter: Accepted Note: frequency=927.9965 amplitude=74.95198 duration=575.823
+Filter: Too quiet or too loud: volume=2.8353539
+Filter: Accepted Note: frequency=48.13832 amplitude=68.73758 duration=640.89557
+Filter: Accepted Note: frequency=414.4239 amplitude=50.46092 duration=648.33746
+Filter: Too quiet or too loud: volume=23.161514
+Filter: Frequency is inaudible: frequency=15.03849
+Filter: Too short of a duration: duration=470.52032
+Filter: Too quiet or too loud: volume=22.845127
+Filter: Too quiet or too loud: volume=0.069685936
+Filter: Too short of a duration: duration=441.8876
+Filter: Too quiet or too loud: volume=15.9015255
+Filter: Too quiet or too loud: volume=3.3897781
+Filter: Accepted Note: frequency=565.1918 amplitude=53.20504 duration=838.87274
+Filter: Too short of a duration: duration=189.56525
+Filter: Too quiet or too loud: volume=-2.6448226
+Filter: Too short of a duration: duration=303.16055
+Filter: Too short of a duration: duration=152.32808
+Filter: Too short of a duration: duration=190.19968
+Filter: Accepted Note: frequency=70.80716 amplitude=59.013374 duration=774.778
+Filter: Accepted Note: frequency=357.18805 amplitude=32.2597 duration=543.22876
+Filter: Too quiet or too loud: volume=18.494476
+Filter: Too short of a duration: duration=365.6555
+Filter: Accepted Note: frequency=43.80345 amplitude=33.320335 duration=953.63745
+Filter: Too short of a duration: duration=278.72147
+Filter: Too short of a duration: duration=430.98462
+Filter: Too quiet or too loud: volume=23.511837
+Filter: Too quiet or too loud: volume=14.182951
+Filter: Too short of a duration: duration=21.9872
+Filter: Too quiet or too loud: volume=-1.0538969
+Filter: Too short of a duration: duration=254.29195
+Filter: The note is suspicious: amplitude=86.49697 predecessor's amplitude=33.320335
+Filter: Too quiet or too loud: volume=17.772856
+Filter: Accepted Note: frequency=933.2848 amplitude=65.92123 duration=694.89264
+Filter: Too quiet or too loud: volume=10.02179
+Filter: Accepted Note: frequency=113.90448 amplitude=50.425587 duration=518.2271
+Filter: Too quiet or too loud: volume=6.758627
+Filter: Too quiet or too loud: volume=29.728363
+Filter: Too short of a duration: duration=402.06015
+Filter: Too short of a duration: duration=69.06211
+Filter: Too short of a duration: duration=392.64297
+Filter: Too quiet or too loud: volume=-0.9108639
+Filter: Too quiet or too loud: volume=17.246565
+Filter: Accepted Note: frequency=377.5354 amplitude=34.416855 duration=951.09064
+Filter: Too quiet or too loud: volume=19.144596
+Filter: Too quiet or too loud: volume=4.9637756
+Filter: Too quiet or too loud: volume=1.1201763
+Filter: Too short of a duration: duration=197.11983
+Filter: Too quiet or too loud: volume=22.89141
+Filter: Too quiet or too loud: volume=24.673603
+Filter: Too short of a duration: duration=398.9029
+Filter: Too short of a duration: duration=454.77295
+Filter: Too quiet or too loud: volume=7.9293995
+Filter: Too short of a duration: duration=246.94473
+Filter: Too short of a duration: duration=222.42761
+Filter: Too quiet or too loud: volume=14.024088
+Filter: Too quiet or too loud: volume=12.561014
+Filter: Too short of a duration: duration=303.23547
+Filter: Too short of a duration: duration=169.52115
+Filter: Accepted Note: frequency=970.38135 amplitude=49.469204 duration=784.883
+Filter: Too quiet or too loud: volume=-3.4769154
+Filter: Accepted Note: frequency=757.59705 amplitude=43.326374 duration=675.2503
+Filter: Accepted Note: frequency=304.8511 amplitude=37.326893 duration=823.91
+Filter: Too quiet or too loud: volume=12.076702
+Filter: Accepted Note: frequency=509.68115 amplitude=72.22118 duration=800.3156
+Filter: Too quiet or too loud: volume=4.2345667
+Filter: Too short of a duration: duration=413.87857
 Shutting down Tester
-Playing: frequency=58.855713 amplitude=45.40378 duration=505.97687
-Playing: frequency=987.0742 amplitude=46.52883 duration=922.0839
-Playing: frequency=255.86963 amplitude=88.53513 duration=565.3445
-Playing: frequency=631.3636 amplitude=40.749893 duration=613.93634
-Playing: frequency=261.63293 amplitude=61.503265 duration=827.18097
-Playing: frequency=814.16455 amplitude=44.042625 duration=684.5597
-Playing: frequency=422.44815 amplitude=34.079243 duration=618.44415
-Playing: frequency=899.5592 amplitude=58.05462 duration=975.10565
-Playing: frequency=653.92566 amplitude=35.966457 duration=607.94293
-Playing: frequency=327.57144 amplitude=61.858604 duration=646.1734
-Playing: frequency=23.392141 amplitude=81.97237 duration=851.8904
-Playing: frequency=164.80565 amplitude=36.339478 duration=966.7903
-Playing: frequency=435.46384 amplitude=59.923058 duration=693.8895
-Playing: frequency=274.73355 amplitude=42.957386 duration=825.00323
-Playing: frequency=298.66855 amplitude=59.721634 duration=908.7754
-Playing: frequency=438.94666 amplitude=65.57257 duration=790.57806
-Playing: frequency=937.9618 amplitude=38.088284 duration=961.64465
-Playing: frequency=695.26636 amplitude=68.15913 duration=615.583
-Playing: frequency=275.88336 amplitude=43.80938 duration=689.5791
-Playing: frequency=852.48645 amplitude=87.165955 duration=744.62427
-Playing: frequency=340.6369 amplitude=50.89042 duration=708.82385
-Playing: frequency=480.34613 amplitude=72.934944 duration=732.01886
-Playing: frequency=654.46106 amplitude=44.55089 duration=954.63007
-Playing: frequency=701.91095 amplitude=57.587242 duration=512.9472
-Playing: frequency=527.26434 amplitude=33.72329 duration=541.5026
-Playing: frequency=204.79286 amplitude=48.64599 duration=523.8261
-Playing: frequency=241.96828 amplitude=71.10218 duration=892.5292
-Playing: frequency=824.86816 amplitude=48.222122 duration=640.51733
-Playing: frequency=408.75006 amplitude=75.803345 duration=609.1648
-Playing: frequency=991.2919 amplitude=34.76502 duration=819.793
-Playing: frequency=155.0762 amplitude=5.4228573 duration=846.08624
+Playing: frequency=500.16284 amplitude=42.65851 duration=979.1076
+Playing: frequency=863.0429 amplitude=46.692444 duration=550.13715
+Playing: frequency=624.5248 amplitude=63.038498 duration=909.5008
+Playing: frequency=277.22006 amplitude=59.547935 duration=988.06476
+Playing: frequency=304.34042 amplitude=46.844086 duration=936.15063
+Playing: frequency=179.70688 amplitude=39.316372 duration=839.4165
+Playing: frequency=927.9965 amplitude=74.95198 duration=575.823
+Playing: frequency=48.13832 amplitude=68.73758 duration=640.89557
+Playing: frequency=414.4239 amplitude=50.46092 duration=648.33746
+Playing: frequency=565.1918 amplitude=53.20504 duration=838.87274
+Playing: frequency=70.80716 amplitude=59.013374 duration=774.778
+Playing: frequency=357.18805 amplitude=32.2597 duration=543.22876
+Playing: frequency=43.80345 amplitude=33.320335 duration=953.63745
+Playing: frequency=933.2848 amplitude=65.92123 duration=694.89264
+Playing: frequency=113.90448 amplitude=50.425587 duration=518.2271
+Playing: frequency=377.5354 amplitude=34.416855 duration=951.09064
+Playing: frequency=970.38135 amplitude=49.469204 duration=784.883
+Playing: frequency=757.59705 amplitude=43.326374 duration=675.2503
+Playing: frequency=304.8511 amplitude=37.326893 duration=823.91
+Playing: frequency=509.68115 amplitude=72.22118 duration=800.3156
+Playing: frequency=61.243294 amplitude=4.6772804 duration=280.0672
 Shutting down Consumer
 ```
 
