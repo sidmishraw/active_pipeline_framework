@@ -8,6 +8,8 @@
  */
 package org.sjsu.sidmishraw.examples;
 
+import java.util.Map;
+
 /**
  * @author sidmishraw
  *
@@ -21,8 +23,20 @@ public class AirlinePerformanceAnalyzer {
 	/**
 	 * 
 	 */
-	public AirlinePerformanceAnalyzer() {
-		// TODO Auto-generated constructor stub
+	public AirlinePerformanceAnalyzer() {}
+	
+	public static Map<String, Integer> getTotalDelays(String fileName) {
+		
+	}
+	
+	public static Map<String, Double> getAverageDelays(String fileName) {
+		
+	}
+	
+	public static void displayTables(String fileName) {
+		
+		Map<String, Integer> totals = getTotalDelays(fileName);
+		Map<String, Integer> averages = getAverageDelays(fileName);
 	}
 	
 	/**
