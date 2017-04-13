@@ -73,6 +73,8 @@ public class Pipe<T> {
 		
 		Message<T> message = null;
 		
+		// if blocking is allowed, then the read will block the Pipe till there
+		// is data in the message queue
 		while (this.messageQueue.size() == 0 || null == (message = this.getMessageQueue().poll())) {
 			
 			try {
@@ -104,6 +106,9 @@ public class Pipe<T> {
 		
 		this.getMessageQueue().add(message);
 		
+		// Sets the blocking of the pipe to false after receiving the
+		// message with `quit:true` flag. After this the pipe will never
+		// allow blocking even if its message queue is empty.
 		if (message.isQuit()) {
 			
 			this.allowBlocking = false;
