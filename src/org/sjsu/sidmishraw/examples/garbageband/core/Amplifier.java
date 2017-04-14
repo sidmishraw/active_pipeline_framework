@@ -49,16 +49,16 @@ public class Amplifier extends Transformer<Note> {
 	 */
 	private final float modifyVolume(float amplitude) {
 		
-		Random random = new Random(1234);
+		Random random = new Random();
 		
 		if ((random.nextFloat() * 100) % 2 == 0) {
 			
 			// increase amplitude for even
-			amplitude += 10;
+			amplitude += 50;
 		} else {
 			
 			// decrease amplitude for odd
-			amplitude -= 10;
+			amplitude -= 5;
 		}
 		
 		return amplitude;

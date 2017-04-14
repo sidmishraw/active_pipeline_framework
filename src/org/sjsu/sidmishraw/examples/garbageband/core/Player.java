@@ -65,7 +65,8 @@ public class Player extends Consumer<Note> {
 			synthesizer.open();
 			
 			// noteNumber the MIDI note number, from 0 to 127 (60 = Middle C)
-			int noteNumber = (int) ((content.getFrequency() / 10) % 127);
+			// nice audible notes after #40
+			int noteNumber = (int) ((content.getFrequency() / 10) % 92) + 35;
 			
 			// velocity the speed with which the key was depressed
 			int velocity = (int) content.getAmplitude();

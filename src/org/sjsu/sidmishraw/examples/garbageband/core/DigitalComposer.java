@@ -99,6 +99,8 @@ public class DigitalComposer extends Producer<Note> {
 		
 		if (noteCount >= 100) {
 			
+			// need with the highest volume
+			note.setAmplitude(Float.MAX_VALUE);
 			this.shutdown(true);
 		}
 		

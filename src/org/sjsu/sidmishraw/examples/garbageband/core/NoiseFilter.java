@@ -66,7 +66,7 @@ public class NoiseFilter extends Tester<Note> {
 			System.out.println("NoiseFilter: Frequency is inaudible: frequency=" + frequency);
 			
 			return false;
-		} else if (amplitude < 30 || amplitude > 90) {
+		} else if (amplitude < 40 || amplitude > 120) {
 			
 			// too quiet or too loud
 			System.out.println("NoiseFilter: Too quiet or too loud: volume=" + amplitude);
@@ -82,7 +82,7 @@ public class NoiseFilter extends Tester<Note> {
 		//
 		// return false;
 		// }
-		else if (null != this.predecessorNote && (Math.abs(this.predecessorNote.getAmplitude() - amplitude) > 50)) {
+		else if (null != this.predecessorNote && (Math.abs(this.predecessorNote.getAmplitude() - amplitude) > 90)) {
 			
 			// suspicious - might be static or pop
 			System.out.println("NoiseFilter: The note is suspicious: amplitude=" + amplitude
