@@ -68,7 +68,7 @@ public abstract class Tester<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
-		System.out.println("Started Tester");
+		System.out.println("Started Tester: " + this.getClass().getSimpleName());
 		
 		// TODO Auto-generated method stub
 		// tests the messages from the input pipe
@@ -143,7 +143,7 @@ public abstract class Tester<T> extends Filter<T> {
 			}
 		}
 		
-		System.out.println("Shutting down Tester");
+		System.out.println("Shutting down Tester: " + this.getClass().getSimpleName());
 		
 		Thread.yield();
 	}

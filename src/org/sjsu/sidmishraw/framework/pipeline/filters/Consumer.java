@@ -69,7 +69,7 @@ public abstract class Consumer<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
-		System.out.println("Started Consumer");
+		System.out.println("Started Consumer: " + this.getClass().getSimpleName());
 		
 		boolean shutdown = false;
 		
@@ -120,7 +120,7 @@ public abstract class Consumer<T> extends Filter<T> {
 			
 		}
 		
-		System.out.println("Shutting down Consumer");
+		System.out.println("Shutting down Consumer: " + this.getClass().getSimpleName());
 		
 		Thread.yield();
 	}

@@ -73,7 +73,7 @@ public abstract class Producer<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
-		System.out.println("Started Producer");
+		System.out.println("Started Producer: " + this.getClass().getSimpleName());
 		
 		// flag that denotes that the Producer should shutdown
 		boolean shutdown = false;
@@ -116,7 +116,7 @@ public abstract class Producer<T> extends Filter<T> {
 			}
 		}
 		
-		System.out.println("Shutting down Producer");
+		System.out.println("Shutting down Producer: " + this.getClass().getSimpleName());
 		Thread.yield();
 	}
 	

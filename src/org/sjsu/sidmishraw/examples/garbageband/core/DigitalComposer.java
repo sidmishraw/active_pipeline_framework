@@ -92,7 +92,7 @@ public class DigitalComposer extends Producer<Note> {
 		
 		Note note = new Note(frequency, amplitude, duration);
 		
-		System.out.println("Composer: Produced note# " + noteCount + "having frequency=" + frequency + " amplitude="
+		System.out.println("Composer: Produced note #" + noteCount + " having frequency=" + frequency + " amplitude="
 				+ amplitude + " duration=" + duration);
 		
 		this.noteCount++;

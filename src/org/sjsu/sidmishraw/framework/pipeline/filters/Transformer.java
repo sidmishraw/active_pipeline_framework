@@ -69,7 +69,7 @@ public abstract class Transformer<T> extends Filter<T> {
 	@Override
 	public void run() {
 		
-		System.out.println("Started Transformer");
+		System.out.println("Started Transformer: " + this.getClass().getSimpleName());
 		
 		boolean shutdown = false;
 		
@@ -144,7 +144,7 @@ public abstract class Transformer<T> extends Filter<T> {
 			}
 		}
 		
-		System.out.println("Shutting down Transformer");
+		System.out.println("Shutting down Transformer: " + this.getClass().getSimpleName());
 		
 		Thread.yield();
 	}
