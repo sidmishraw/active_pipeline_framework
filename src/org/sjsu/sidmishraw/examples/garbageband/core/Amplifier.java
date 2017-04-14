@@ -26,7 +26,10 @@ public class Amplifier extends Transformer<Note> {
 	/**
 	 * 
 	 */
-	public Amplifier() {}
+	public Amplifier() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe

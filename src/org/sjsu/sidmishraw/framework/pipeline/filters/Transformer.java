@@ -26,7 +26,10 @@ public abstract class Transformer<T> extends Filter<T> {
 	/**
 	 * 
 	 */
-	public Transformer() {}
+	public Transformer() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe

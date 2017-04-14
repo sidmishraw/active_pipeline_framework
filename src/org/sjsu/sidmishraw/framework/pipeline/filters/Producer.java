@@ -28,7 +28,10 @@ public abstract class Producer<T> extends Filter<T> {
 	/**
 	 * 
 	 */
-	public Producer() {}
+	public Producer() {
+		
+		super();
+	}
 	
 	/**
 	 * The inPipe of the Producer can be null, but not the outPipe

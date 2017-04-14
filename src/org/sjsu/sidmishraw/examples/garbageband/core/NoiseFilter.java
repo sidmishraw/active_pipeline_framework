@@ -28,7 +28,10 @@ public class NoiseFilter extends Tester<Note> {
 	/**
 	 * 
 	 */
-	public NoiseFilter() {}
+	public NoiseFilter() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe
@@ -54,31 +57,36 @@ public class NoiseFilter extends Tester<Note> {
 		
 		float frequency = messageContent.getFrequency();
 		float amplitude = messageContent.getAmplitude();
-		float duration = messageContent.getDuration();
+		// moved over to Duration Filter
+		// float duration = messageContent.getDuration();
 		
 		if (frequency < 20 || frequency > 20000) {
 			
 			// inaudible frequencies
-			System.out.println("Filter: Frequency is inaudible: frequency=" + frequency);
+			System.out.println("NoiseFilter: Frequency is inaudible: frequency=" + frequency);
 			
 			return false;
 		} else if (amplitude < 30 || amplitude > 90) {
 			
 			// too quiet or too loud
-			System.out.println("Filter: Too quiet or too loud: volume=" + amplitude);
+			System.out.println("NoiseFilter: Too quiet or too loud: volume=" + amplitude);
 			
 			return false;
-		} else if (duration < 500) {
-			
-			// too short duration
-			System.out.println("Filter: Too short of a duration: duration=" + duration);
-			
-			return false;
-		} else if (null != this.predecessorNote && (Math.abs(this.predecessorNote.getAmplitude() - amplitude) > 50)) {
+		}
+		// moved over to Duration Filter
+		// else if (duration < 500) {
+		//
+		// // too short duration
+		// System.out.println("Filter: Too short of a duration: duration=" +
+		// duration);
+		//
+		// return false;
+		// }
+		else if (null != this.predecessorNote && (Math.abs(this.predecessorNote.getAmplitude() - amplitude) > 50)) {
 			
 			// suspicious - might be static or pop
-			System.out.println("Filter: The note is suspicious: amplitude=" + amplitude + " predecessor's amplitude="
-					+ this.predecessorNote.getAmplitude());
+			System.out.println("NoiseFilter: The note is suspicious: amplitude=" + amplitude
+					+ " predecessor's amplitude=" + this.predecessorNote.getAmplitude());
 			
 			return false;
 		}
@@ -86,7 +94,7 @@ public class NoiseFilter extends Tester<Note> {
 		// update the predecessor note
 		this.predecessorNote = messageContent;
 		
-		System.out.println(String.format("Filter: Accepted Note: frequency=%s amplitude=%s duration=%s",
+		System.out.println(String.format("NoiseFilter: Accepted Note: frequency=%s amplitude=%s duration=%s",
 				messageContent.getFrequency(), messageContent.getAmplitude(), messageContent.getDuration()));
 		
 		return true;

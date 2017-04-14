@@ -35,6 +35,19 @@ public class CSVStream extends Producer<String[]> {
 	private Queue<String[]>	csvStrings	= null;
 	
 	/**
+	 * 
+	 */
+	public CSVStream() {
+		
+		if (null == csvStrings) {
+			
+			csvStrings = new LinkedList<>();
+		}
+		
+		extractLinesFromCSV();
+	}
+	
+	/**
 	 * @param inPipe
 	 * @param outPipe
 	 */
@@ -65,7 +78,9 @@ public class CSVStream extends Producer<String[]> {
 			
 			while (null != (line = br.readLine())) {
 				
-				this.csvStrings.add(line.split(","));
+				String[] array = new String[1];
+				array[0] = line;
+				this.csvStrings.add(array);
 			}
 		} catch (IOException e) {
 			

@@ -26,13 +26,17 @@ public abstract class Consumer<T> extends Filter<T> {
 	/**
 	 * 
 	 */
-	public Consumer() {}
+	public Consumer() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe
 	 * @param outPipe
 	 */
 	public Consumer(Pipe<T> inPipe, Pipe<T> outPipe) {
+		
 		super(inPipe, outPipe);
 	}
 	

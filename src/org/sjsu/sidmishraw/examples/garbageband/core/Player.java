@@ -27,7 +27,10 @@ public class Player extends Consumer<Note> {
 	/**
 	 * 
 	 */
-	public Player() {}
+	public Player() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe

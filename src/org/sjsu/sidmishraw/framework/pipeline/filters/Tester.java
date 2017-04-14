@@ -25,7 +25,10 @@ public abstract class Tester<T> extends Filter<T> {
 	/**
 	 * 
 	 */
-	public Tester() {}
+	public Tester() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe

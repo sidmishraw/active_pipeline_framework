@@ -28,7 +28,10 @@ public class DigitalComposer extends Producer<Note> {
 	/**
 	 * 
 	 */
-	public DigitalComposer() {}
+	public DigitalComposer() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe
@@ -40,8 +43,6 @@ public class DigitalComposer extends Producer<Note> {
 	}
 	
 	/**
-	 * 
-	 * @param initialSeed
 	 * @return {@link Float}
 	 */
 	private final float generateFrequency() {
@@ -54,8 +55,6 @@ public class DigitalComposer extends Producer<Note> {
 	}
 	
 	/**
-	 * 
-	 * @param initialSeed
 	 * @return {@link Float}
 	 */
 	private final float generateAmplitude() {
@@ -68,8 +67,6 @@ public class DigitalComposer extends Producer<Note> {
 	}
 	
 	/**
-	 * 
-	 * @param initialSeed
 	 * @return {@link Float}
 	 */
 	private final float generateDuration() {
