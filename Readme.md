@@ -458,3 +458,74 @@ Stop dancing!! Music is over~~~
 
 
 * [Airline Performance Analyzer](http://www.cs.sjsu.edu/faculty/pearce/modules/projects/streams/index.htm)
+
+The US Department of Transportation keeps track of the nation's transportation systems through a massive collection of databases that can be accessed through their web site:
+[](http://www.transtats.bts.gov/)
+Anyone can query any of these databases and download the result as a CSV file. The example used with this framework uses a csv called ONTIME.csv.
+It is located in the `resources` folder of this project.
+For example, the file ONTIME.csv shows statistics on all commercial flights in California for the month of January 2015.
+The file contains 94803 lines. Each line represents one flight.
+
+The goal of this example is to use the Active Pipeline framework and find out the worst airline using the average totaldelays as per the ONTIME.csv.
+The steps will comprise of reading in data from the CSV, converting the lines into arrays, filtering out cancelled and diverted flights then computing the total delays after collecting the information.
+Using the collected data, compute which airline performed bad.
+
+Output for this example:
+```
+::Total Delays for flights::
+AA -> 222045
+OO -> 592716
+VX -> 78069
+MQ -> 3177
+DL -> 98437
+UA -> 368290
+AS -> 89681
+F9 -> 19553
+B6 -> 57462
+WN -> 549184
+HA -> 13997
+NK -> 29837
+US -> 61055
+::Average Delays for flights::
+AA -> 23.83
+OO -> 30.25
+VX -> 18.93
+MQ -> 55.74
+DL -> 14.49
+UA -> 27.85
+AS -> 16.54
+F9 -> 24.78
+B6 -> 19.84
+WN -> 21.46
+HA -> 18.71
+NK -> 28.52
+US -> 16.97
+Worst carrier is: MQ with average delay of: 55.74
+```
+
+The examples are located inside the `app` Source folder inside the package `org.sjsu.sidmishraw.examples`.
+
+### Running the examples using Eclipse:
+This project requires 2 `Source Folder`s named `src` and `app`.
+
+The `src` folder contains the source code for the main pipeline as well as the core implementations of the GarBage Band and Airline Performance examples.
+They are located under the following packages inside `src`:
+* Pipeline Architecture Framework: **org.sjsu.sidmishraw.framework.pipeline**
+* Garbage Band core implementation: **org.sjsu.sidmishraw.examples.garbageband**
+* Airline Performance core implementation: **org.sjsu.sidmishraw.examples.airlineperfanalyzer**
+
+The `app` folder contains the source code for the GarBage Band and Airline Performance examples main driver implementations.
+They are located under the following packages inside `app`:
+* Garbage Band main driver implementation: **org.sjsu.sidmishraw.examples**
+* Airline Performance main driver implementation: **org.sjsu.sidmishraw.examples**
+
+After compilation, the `.class` files of all the examples occur under the **org.sjsu.sidmishraw.examples** package and `.class` files of the framework occurs under **org.sjsu.sidmishraw.framework** package.
+
+So after importing the project into eclipse and making it into a Java project, you need to make the `src` and `app` Source Folders and compile using JDK 8.
+
+To run the examples, run the following `.java` files inside `app` Source Folder:
+* Garbage Band: **org.sjsu.sidmishraw.examples.GarbageBand**
+* Airline Performance: **org.sjsu.sidmishraw.examples.AirlinePerformanceAnalyzer**
+
+#### MIN JDK - v1.8 (This project uses lambdas and streams.)
+#### MIN Eclipse - v4.5.2 (Mars<stable>)

@@ -30,7 +30,11 @@ public class CSVStream extends Producer<String[]> {
 	
 	
 	// name of the resource CSV needed for this example
-	private final String	ONTIME_CSV	= "ONTIME.csv";
+	private final String	ONTIME_CSV	= "resources/ONTIME.csv";
+	
+	// the filename of the producer, if not mentioned, it defaults to the
+	// ONTIME.csv inside resources
+	private String			fileName;
 	
 	private Queue<String[]>	csvStrings	= null;
 	
@@ -38,6 +42,8 @@ public class CSVStream extends Producer<String[]> {
 	 * 
 	 */
 	public CSVStream() {
+		
+		super();
 		
 		if (null == csvStrings) {
 			
@@ -71,8 +77,9 @@ public class CSVStream extends Producer<String[]> {
 	 */
 	private void extractLinesFromCSV() {
 		
-		try (BufferedReader br = new BufferedReader(
-				new InputStreamReader(new FileInputStream(new File(this.ONTIME_CSV))))) {
+		String fileName = (null == this.fileName || this.fileName.isEmpty()) ? this.ONTIME_CSV : this.fileName;
+		
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(fileName))))) {
 			
 			String line = null;
 			
@@ -109,5 +116,42 @@ public class CSVStream extends Producer<String[]> {
 		}
 		
 		return line;
+	}
+	
+	/**
+	 * @return the fileName
+	 */
+	public String getFileName() {
+		return this.fileName;
+	}
+	
+	/**
+	 * @param fileName
+	 *            the fileName to set
+	 */
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	
+	/**
+	 * @return the csvStrings
+	 */
+	public Queue<String[]> getCsvStrings() {
+		return this.csvStrings;
+	}
+	
+	/**
+	 * @param csvStrings
+	 *            the csvStrings to set
+	 */
+	public void setCsvStrings(Queue<String[]> csvStrings) {
+		this.csvStrings = csvStrings;
+	}
+	
+	/**
+	 * @return the oNTIME_CSV
+	 */
+	public String getONTIME_CSV() {
+		return this.ONTIME_CSV;
 	}
 }

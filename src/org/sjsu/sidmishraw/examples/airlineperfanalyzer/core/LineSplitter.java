@@ -27,7 +27,10 @@ public class LineSplitter extends Transformer<String[]> {
 	/**
 	 * 
 	 */
-	public LineSplitter() {}
+	public LineSplitter() {
+		
+		super();
+	}
 	
 	/**
 	 * @param inPipe

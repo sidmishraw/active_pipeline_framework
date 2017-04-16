@@ -8,13 +8,18 @@
  */
 package org.sjsu.sidmishraw.examples;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.text.DecimalFormat;
+import java.util.HashMap;
 import java.util.Map;
+
+import org.sjsu.sidmishraw.examples.airlineperfanalyzer.core.CSVStream;
+import org.sjsu.sidmishraw.examples.airlineperfanalyzer.core.DataCleanser;
+import org.sjsu.sidmishraw.examples.airlineperfanalyzer.core.DataCollector;
+import org.sjsu.sidmishraw.examples.airlineperfanalyzer.core.LineSplitter;
+import org.sjsu.sidmishraw.examples.airlineperfanalyzer.core.Stats;
+import org.sjsu.sidmishraw.framework.pipeline.errors.FilterInstantiationException;
+import org.sjsu.sidmishraw.framework.pipeline.errors.PipesNotAttachedError;
+import org.sjsu.sidmishraw.framework.pipeline.utils.Utils;
 
 /**
  * @author sidmishraw
@@ -26,67 +31,110 @@ import java.util.Map;
 public class AirlinePerformanceAnalyzer {
 	
 	
+	private static String			mostDelayedFlight	= "";
+	private static double			mostDelay			= 0;
+	private static DecimalFormat	decimalFormatt		= new DecimalFormat("##.00");
+	
 	/**
 	 * 
+	 * @param flightString
 	 */
-	public AirlinePerformanceAnalyzer() {}
-	
-	public static Map<String, Integer> getTotalDelays(String fileName) {
+	private static String extractCarrierName(String flightString) {
 		
-		return null;
+		return flightString.split(", ")[0];
 	}
 	
-	public static Map<String, Double> getAverageDelays(String fileName) {
+	/**
+	 * 
+	 * @param airlineStats
+	 * @return table of mappings between airline string and total delays
+	 */
+	public static Map<String, Integer> getTotalDelays(Map<String, Stats> airlineStats) {
 		
-		return null;
+		Map<String, Integer> delaysTable = new HashMap<>();
+		
+		airlineStats.entrySet().stream()
+				.forEach(entry -> delaysTable.put(entry.getKey(), entry.getValue().getTotalDelay()));
+		
+		return delaysTable;
 	}
 	
-	@SuppressWarnings("unused")
-	public static void displayTables(String fileName) {
+	/**
+	 * 
+	 * @param airlineStats
+	 * @return table of mappings between airline string anf avg delays
+	 */
+	public static Map<String, Double> getAverageDelays(Map<String, Stats> airlineStats) {
 		
-		Map<String, Integer> totals = getTotalDelays(fileName);
-		Map<String, Double> averages = getAverageDelays(fileName);
+		Map<String, Double> avgDelaysTable = new HashMap<>();
 		
+		airlineStats.entrySet().stream().forEach(entry -> avgDelaysTable.put(entry.getKey(),
+				((double) entry.getValue().getTotalDelay() / (double) entry.getValue().getNumFlights())));
+		
+		return avgDelaysTable;
+	}
+	
+	public static void displayTables(Map<String, Stats> airlineStats) {
+		
+		System.out.println("::Total Delays for flights::");
+		
+		// stream through the total delays
+		// and produce the output
+		getTotalDelays(airlineStats).entrySet().stream().forEach(entry -> {
+			
+			System.out.println(entry.getKey() + " -> " + entry.getValue());
+		});
+		
+		System.out.println("::Average Delays for flights::");
+		
+		// stream and obtain the average delays
+		getAverageDelays(airlineStats).entrySet().stream().forEach(entry -> {
+			
+			System.out.println(entry.getKey() + " -> " + decimalFormatt.format(entry.getValue()));
+			
+			if (mostDelay < entry.getValue()) {
+				
+				mostDelayedFlight = entry.getKey();
+				mostDelay = entry.getValue();
+			}
+		});
+		
+		System.out.println("Worst carrier is: " + extractCarrierName(mostDelayedFlight) + " with average delay of: "
+				+ decimalFormatt.format(mostDelay));
 	}
 	
 	/**
 	 * @param args
+	 * @throws FilterInstantiationException
+	 * @throws PipesNotAttachedError
+	 * @throws InterruptedException
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args)
+			throws FilterInstantiationException, PipesNotAttachedError, InterruptedException {
 		
-		try (BufferedReader br = new BufferedReader(
-				new InputStreamReader(new FileInputStream(new File("resources/ONTIME.csv"))))) {
-			
-			String line1 = br.readLine();
-			String line2 = br.readLine();
-			
-			System.out.println(line1 + "\n" + line2);
-			
-			List<String> strings = new ArrayList<>();
-			String prev = "";
-			
-			for (String value : line2.split(",")) {
-				
-				if (value.startsWith("\"")) {
-					
-					prev = value.substring(1);
-				} else if (value.endsWith("\"")) {
-					
-					prev += "," + value.substring(0, value.length() - 1);
-					strings.add(prev);
-					prev = "";
-				} else {
-					
-					strings.add(value);
-				}
-			}
-			
-			strings.stream().forEach(System.out::println);
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
+		// create the filters
+		CSVStream csvStream = (CSVStream) Utils.create(CSVStream.class);
+		LineSplitter lineSplitter = (LineSplitter) Utils.create(LineSplitter.class);
+		DataCleanser dataCleanser = (DataCleanser) Utils.create(DataCleanser.class);
+		DataCollector dataCollector = (DataCollector) Utils.create(DataCollector.class);
 		
+		// connect them to each other to form the pipeline
+		csvStream.connectOut(lineSplitter);
+		lineSplitter.connectOut(dataCleanser);
+		dataCleanser.connectOut(dataCollector);
+		
+		// can set the source to Stream out of for the CSVStream before
+		// starting, changing it midway might change the data in the pipeline
+		csvStream.setFileName("resources/ONTIME.csv");
+		
+		Utils.start(csvStream, lineSplitter, dataCleanser, dataCollector);
+		
+		Utils.waitFor(csvStream, lineSplitter, dataCleanser, dataCollector);
+		
+		Map<String, Stats> airlineStats = dataCollector.getAirlineStatsTable();
+		
+		// airlineStats.values().stream().forEach(System.out::println);
+		displayTables(airlineStats);
 	}
 	
 }
